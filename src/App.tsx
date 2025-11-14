@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Skills from './components/sections/Skills';
+import Certifications from './components/sections/Certifications';
 import Projects from './components/sections/Projects';
 import Contact from './components/sections/Contact';
 
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <Hero />
       <About />
       <Skills />
+      <Certifications />
       <Projects />
       <Contact />
       <footer className="bg-gray-900/50 py-6 text-center">
