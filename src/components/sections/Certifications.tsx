@@ -12,35 +12,38 @@ const certifications: Certification[] = [
   {
     name: 'Microsoft Certified: Azure AI Engineer Associate',
     issuer: 'Microsoft',
-    image: '/images/certifications/azure-ai-engineer-associate.svg',
+    image: 'https://learn.microsoft.com/training/achievements/azure-ai-engineer-associate.svg',
     description:
       'Designing and implementing responsible AI solutions on Azure using AI services, Azure ML, and cognitive services.',
   },
   {
     name: 'Microsoft Certified: Azure Data Scientist Associate',
     issuer: 'Microsoft',
-    image: '/images/certifications/azure-data-scientist-associate.svg',
+    image: 'https://learn.microsoft.com/training/achievements/azure-data-scientist-associate.svg',
     description:
       'Building, deploying, and operationalizing machine learning workloads on Azure with responsible AI practices.',
   },
   {
     name: 'AWS Certified DevOps Engineer – Professional',
     issuer: 'Amazon Web Services',
-    image: '/images/certifications/aws-devops-engineer-professional.svg',
+    image:
+      'https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_DevOps-Engineer-Professional_badge.png',
     description:
       'Automating and managing distributed systems on AWS with CI/CD pipelines, observability, and operational excellence.',
   },
   {
     name: 'AWS Certified Developer – Associate',
     issuer: 'Amazon Web Services',
-    image: '/images/certifications/aws-developer-associate.svg',
+    image:
+      'https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Developer-Associate_badge.png',
     description:
       'Developing and optimizing serverless and containerized applications on AWS with secure, scalable architectures.',
   },
   {
     name: 'AWS Certified Cloud Practitioner',
     issuer: 'Amazon Web Services',
-    image: '/images/certifications/aws-cloud-practitioner.svg',
+    image:
+      'https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Cloud-Practitioner_badge.png',
     description:
       'Demonstrating foundational AWS cloud fluency, architectural best practices, and the shared responsibility model.',
   },
