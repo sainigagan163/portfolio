@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AWS Certified Developer Associate badge</title>
+  <desc id="desc">Hexagon-shaped AWS certification badge with Developer Associate text.</desc>
+  <defs>
+    <linearGradient id="daOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0E5F2" />
+      <stop offset="100%" stop-color="#C6D0E3" />
+    </linearGradient>
+    <linearGradient id="daInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3640A1" />
+      <stop offset="100%" stop-color="#1A2C86" />
+    </linearGradient>
+    <linearGradient id="daBanner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5162D9" />
+      <stop offset="100%" stop-color="#3144B8" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#daOuter)" d="M256 28l197 114v228L256 484 59 370V142z" stroke="#C3CCD8" stroke-width="12" />
+  <path fill="url(#daInner)" d="M256 72l159 92v184L256 440 97 348V164z" />
+  <path fill="#FF9900" d="M353 128l-17 29-16-9 17-29-30-17 9-16 30 17 17-29 16 9-17 29 30 17-9 16z" />
+  <text x="140" y="196" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="60" font-weight="700" fill="#FFFFFF">aws</text>
+  <text x="323" y="196" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="36" font-weight="700" fill="#FF9900">certified</text>
+  <text x="256" y="312" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="48" font-weight="700" fill="#FFFFFF" text-anchor="middle">Developer</text>
+  <rect x="146" y="340" width="220" height="78" rx="34" fill="url(#daBanner)" />
+  <text x="256" y="390" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="34" font-weight="600" fill="#FFFFFF" letter-spacing="4" text-anchor="middle">ASSOCIATE</text>
+</svg>
