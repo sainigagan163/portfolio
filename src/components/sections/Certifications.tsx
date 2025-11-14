@@ -75,7 +75,6 @@ const CERTIFICATIONS: Certification[] = [
   {
     title: 'AWS Certified Developer – Associate',
     provider: 'Amazon Web Services',
-    issued: 'Issued 27 Jul 2023',
     validThrough: 'Valid through 17 Mar 2027',
     summary:
       'Recognizes the ability to build secure, scalable AWS applications leveraging serverless, container, and SDK-driven architectures.',
@@ -95,7 +94,6 @@ const CERTIFICATIONS: Certification[] = [
   {
     title: 'AWS Certified Cloud Practitioner',
     provider: 'Amazon Web Services',
-    issued: 'Issued 13 Mar 2023',
     validThrough: 'Valid through 17 Mar 2027',
     summary:
       'Builds foundational AWS fluency covering architecture, security, compliance, and cost management for cross-functional stakeholders.',
