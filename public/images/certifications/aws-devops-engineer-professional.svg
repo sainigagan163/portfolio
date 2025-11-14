@@ -1,18 +1,44 @@
-<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+<svg width="220" height="240" viewBox="0 0 220 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AWS Certified DevOps Engineer Professional badge</title>
+  <desc id="desc">Hexagonal AWS Certified badge with gold professional ribbon.</desc>
   <defs>
-    <linearGradient id="awsDevOpsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111827" />
-      <stop offset="100%" stop-color="#F97316" />
+    <linearGradient id="awsHex" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#1F2937" />
     </linearGradient>
-    <linearGradient id="awsDevOpsBanner" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="awsRibbon" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#F59E0B" />
-      <stop offset="100%" stop-color="#FB923C" />
+      <stop offset="100%" stop-color="#FBBF24" />
     </linearGradient>
+    <linearGradient id="awsAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="awsShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#111827" flood-opacity="0.45" />
+    </filter>
   </defs>
-  <rect x="8" y="8" width="80" height="80" rx="16" fill="url(#awsDevOpsGradient)" />
-  <path d="M32 38H64V44L48 58L32 44V38Z" fill="#FFEDD5" opacity="0.85" />
-  <path d="M32 50L48 64L64 50" stroke="#FDBA74" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M36 32L48 24L60 32" stroke="#FFE4E6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-  <rect x="16" y="62" width="64" height="18" rx="9" fill="url(#awsDevOpsBanner)" />
-  <text x="48" y="74" text-anchor="middle" font-size="11" font-family="'Segoe UI', sans-serif" fill="#1F2937" font-weight="700">DEVOPS PRO</text>
+  <g filter="url(#awsShadow)">
+    <path
+      d="M110 12L188 58V150L110 198L32 150V58L110 12Z"
+      fill="url(#awsHex)"
+      stroke="#38BDF8"
+      stroke-width="4"
+    />
+    <text x="58" y="80" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="700" fill="#F8FAFC">
+      aws
+    </text>
+    <circle cx="150" cy="60" r="16" fill="url(#awsAccent)" />
+    <text x="110" y="114" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#F8FAFC" font-weight="700">
+      CERTIFIED
+    </text>
+    <path d="M40 146H180L160 188H60L40 146Z" fill="url(#awsRibbon)" />
+    <text x="110" y="172" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" fill="#1F2937" font-weight="700">
+      DEVOPS ENGINEER
+    </text>
+    <text x="110" y="198" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" fill="#111827" font-weight="600">
+      PROFESSIONAL
+    </text>
+  </g>
 </svg>
