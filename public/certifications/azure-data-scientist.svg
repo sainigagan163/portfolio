@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="azureDataGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#8AD0FF" />
+      <stop offset="100%" stop-color="#005FB8" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="18" ry="18" fill="url(#azureDataGradient)" />
+  <circle cx="60" cy="50" r="22" fill="#ffffff" opacity="0.9" />
+  <path d="M44 78c4-10 12-16 16-16s12 6 16 16" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+  <circle cx="60" cy="50" r="10" fill="#005FB8" />
+  <text x="60" y="104" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">DATA</text>
+</svg>

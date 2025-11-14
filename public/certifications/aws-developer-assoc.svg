@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="awsDevGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#00A0E4" />
+      <stop offset="100%" stop-color="#005C97" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="18" ry="18" fill="#232F3E" />
+  <path d="M35 75l25-35 25 35" fill="none" stroke="url(#awsDevGradient)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="60" cy="48" r="10" fill="url(#awsDevGradient)" />
+  <text x="60" y="104" font-family="'Amazon Ember', 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#00A0E4" text-anchor="middle">DEV</text>
+</svg>
