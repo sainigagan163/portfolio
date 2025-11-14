@@ -1,12 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" role="img" aria-labelledby="title desc">
+  <title id="title">AWS Certified Developer Associate badge</title>
+  <desc id="desc">Official style AWS Certified Developer Associate hexagon badge.</desc>
   <defs>
-    <linearGradient id="awsDevGradient" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#00A0E4" />
-      <stop offset="100%" stop-color="#005C97" />
+    <linearGradient id="outer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E6ECF5" />
+      <stop offset="100%" stop-color="#D2DAE4" />
+    </linearGradient>
+    <linearGradient id="inner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28354A" />
+      <stop offset="100%" stop-color="#152130" />
+    </linearGradient>
+    <linearGradient id="bar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4D5B70" />
+      <stop offset="100%" stop-color="#2F3A4B" />
     </linearGradient>
   </defs>
-  <rect width="120" height="120" rx="18" ry="18" fill="#232F3E" />
-  <path d="M35 75l25-35 25 35" fill="none" stroke="url(#awsDevGradient)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
-  <circle cx="60" cy="48" r="10" fill="url(#awsDevGradient)" />
-  <text x="60" y="104" font-family="'Amazon Ember', 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#00A0E4" text-anchor="middle">DEV</text>
+  <path fill="url(#outer)" stroke="#B7C4D5" stroke-width="12" d="M180 18l150 86v172L180 382 30 276V104z" />
+  <path fill="url(#inner)" d="M180 64l114 66v132L180 346 66 262V130z" />
+  <path fill="#FF9900" d="M264 136l-14 24-13-8 14-24-25-14 8-13 25 14 14-24 13 8-14 24 25 14-8 13z" />
+  <g fill="#FFFFFF" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" text-anchor="start">
+    <text x="108" y="188" font-size="56" font-weight="700">aws</text>
+    <text x="210" y="188" font-size="32" font-weight="700" fill="#FF9900">certified</text>
+  </g>
+  <path fill="none" stroke="#FF9900" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M116 218c22-18 53-28 86-28 60 0 98 28 98 76 0 52-42 84-110 84-40 0-70-10-92-30" />
+  <g fill="#FFFFFF" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" text-anchor="middle">
+    <text x="180" y="320" font-size="36" font-weight="700">Developer</text>
+  </g>
+  <rect x="120" y="330" width="120" height="42" rx="20" fill="url(#bar)" />
+  <text x="180" y="360" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">ASSOCIATE</text>
 </svg>
