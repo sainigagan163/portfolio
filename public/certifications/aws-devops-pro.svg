@@ -1,27 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" role="img" aria-labelledby="title desc">
   <title id="title">AWS Certified DevOps Engineer Professional badge</title>
-  <desc id="desc">Hexagon-shaped AWS certification badge with DevOps Engineer Professional text.</desc>
+  <desc id="desc">Official style AWS Certified DevOps Engineer Professional hexagon badge.</desc>
   <defs>
-    <linearGradient id="doOuter" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#D8F2F6" />
-      <stop offset="100%" stop-color="#B5E5EC" />
+    <linearGradient id="outer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E6ECF5" />
+      <stop offset="100%" stop-color="#D2DAE4" />
     </linearGradient>
-    <linearGradient id="doInner" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#027C92" />
-      <stop offset="100%" stop-color="#015D77" />
+    <linearGradient id="inner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#273858" />
+      <stop offset="100%" stop-color="#16263C" />
     </linearGradient>
-    <linearGradient id="doBanner" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#03A5B5" />
-      <stop offset="100%" stop-color="#02718A" />
+    <linearGradient id="bar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#365170" />
+      <stop offset="100%" stop-color="#22344A" />
     </linearGradient>
   </defs>
-  <path fill="url(#doOuter)" d="M256 28l197 114v228L256 484 59 370V142z" stroke="#B5DCE2" stroke-width="12" />
-  <path fill="url(#doInner)" d="M256 72l159 92v184L256 440 97 348V164z" />
-  <path fill="#FF9900" d="M353 128l-17 29-16-9 17-29-30-17 9-16 30 17 17-29 16 9-17 29 30 17-9 16z" />
-  <text x="140" y="196" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="60" font-weight="700" fill="#FFFFFF">aws</text>
-  <text x="323" y="196" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="36" font-weight="700" fill="#FF9900">certified</text>
-  <text x="256" y="310" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="46" font-weight="700" fill="#FFFFFF" text-anchor="middle">DevOps</text>
-  <text x="256" y="352" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="40" font-weight="700" fill="#FFFFFF" text-anchor="middle">Engineer</text>
-  <rect x="126" y="366" width="260" height="86" rx="38" fill="url(#doBanner)" />
-  <text x="256" y="420" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="36" font-weight="600" fill="#FFFFFF" letter-spacing="4" text-anchor="middle">PROFESSIONAL</text>
+  <path fill="url(#outer)" stroke="#B7C4D5" stroke-width="12" d="M180 18l150 86v172L180 382 30 276V104z" />
+  <path fill="url(#inner)" d="M180 64l114 66v132L180 346 66 262V130z" />
+  <path fill="#FF9900" d="M264 136l-14 24-13-8 14-24-25-14 8-13 25 14 14-24 13 8-14 24 25 14-8 13z" />
+  <g fill="#FFFFFF" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" text-anchor="start">
+    <text x="108" y="188" font-size="56" font-weight="700">aws</text>
+    <text x="210" y="188" font-size="32" font-weight="700" fill="#FF9900">certified</text>
+  </g>
+  <path fill="none" stroke="#FF9900" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M116 218c22-18 53-28 86-28 60 0 98 28 98 76 0 52-42 84-110 84-40 0-70-10-92-30" />
+  <g fill="#FFFFFF" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" text-anchor="middle">
+    <text x="180" y="312" font-size="32" font-weight="700">DevOps</text>
+    <text x="180" y="346" font-size="32" font-weight="700">Engineer</text>
+  </g>
+  <rect x="108" y="354" width="144" height="44" rx="20" fill="url(#bar)" />
+  <text x="180" y="384" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">PROFESSIONAL</text>
 </svg>

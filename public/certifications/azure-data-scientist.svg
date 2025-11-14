@@ -1,30 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" role="img" aria-labelledby="title desc">
   <title id="title">Microsoft Certified Azure Data Scientist Associate badge</title>
-  <desc id="desc">Shield shaped Microsoft certification badge with Azure Data Scientist Associate text.</desc>
+  <desc id="desc">Official style Azure Data Scientist Associate shield with Microsoft Certified banner.</desc>
   <defs>
-    <linearGradient id="shieldGradientDS" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0B2F6B" />
-      <stop offset="50%" stop-color="#13509A" />
-      <stop offset="100%" stop-color="#1A7ACC" />
+    <linearGradient id="shieldOutline" x1="0%" y1="0%" x2="100%" y2="120%">
+      <stop offset="0%" stop-color="#1F6FEB" />
+      <stop offset="100%" stop-color="#1449BF" />
     </linearGradient>
-    <linearGradient id="innerShieldDS" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0C2559" />
-      <stop offset="100%" stop-color="#155CA5" />
+    <linearGradient id="shieldCore" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7DB1FF" />
+      <stop offset="55%" stop-color="#3674E8" />
+      <stop offset="100%" stop-color="#2052C9" />
+    </linearGradient>
+    <linearGradient id="divider" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2F65D1" />
+      <stop offset="100%" stop-color="#1E4CBC" />
     </linearGradient>
   </defs>
-  <path fill="#09163A" d="M256 28c-56.2 0-110.1 14-160.2 41.6L64 110.4V232c0 124.3 74.2 240.8 192 300 117.8-59.2 192-175.7 192-300V110.4l-31.8-40.8C366.1 42 312.2 28 256 28z" />
-  <path fill="url(#shieldGradientDS)" d="M256 52c-50.4 0-98.6 13-143.6 38.5L96 117.6V232c0 108.6 63.8 209.6 160 262.8 96.2-53.2 160-154.2 160-262.8V117.6l-16.4-27.1C354.6 65 306.4 52 256 52z" />
-  <path fill="url(#innerShieldDS)" d="M256 80c-44.6 0-87.1 11.5-126.8 33.8L128 129v97c0 95.7 54.9 185.2 140.5 232.8C354.1 411.2 409 321.7 409 226v-97l-1.2-15.2C342.1 91.5 300.6 80 256 80z" />
-  <rect x="86" y="138" width="340" height="118" rx="52" fill="#F4F5F7" stroke="#BFC5D2" stroke-width="10" />
-  <rect x="108" y="158" width="296" height="78" rx="36" fill="#ffffff" />
-  <text x="256" y="120" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="600" fill="#FFFFFF" letter-spacing="4" text-anchor="middle">Microsoft</text>
-  <text x="256" y="170" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#2A2F36" letter-spacing="3" text-anchor="middle">CERTIFIED</text>
-  <text x="256" y="212" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#0C2559" text-anchor="middle">AZURE DATA</text>
-  <text x="256" y="250" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#0C2559" text-anchor="middle">SCIENTIST</text>
-  <rect x="146" y="288" width="220" height="72" rx="36" fill="#0D6EC7" />
-  <text x="256" y="334" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF" letter-spacing="4" text-anchor="middle">ASSOCIATE</text>
-  <g fill="#ffffff" transform="translate(196 360)">
-    <polygon points="60 0 68.6 26.4 96 26.4 73.7 42.8 82.3 69.2 60 52.8 37.7 69.2 46.3 42.8 24 26.4 51.4 26.4" />
-    <polygon points="-4 0 4.6 26.4 32 26.4 9.7 42.8 18.3 69.2 -4 52.8 -26.3 69.2 -17.7 42.8 -40 26.4 -12.6 26.4" />
+  <path fill="#0F1E46" d="M180 12l138 72v148c0 90-64 170-138 188-74-18-138-98-138-188V84z"/>
+  <path fill="url(#shieldOutline)" d="M180 32l118 62v137c0 76-54 147-118 162-64-15-118-86-118-162V94z" />
+  <path fill="url(#shieldCore)" d="M180 60l94 50v116c0 64-40 123-94 140-54-17-94-76-94-140V110z" />
+  <path fill="#0E152F" d="M72 88h216v60H72z" />
+  <text x="180" y="124" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="600" fill="#F2F4F8" text-anchor="middle" letter-spacing="2">MICROSOFT</text>
+  <text x="180" y="150" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20" font-weight="500" fill="#F2F4F8" text-anchor="middle" letter-spacing="3">CERTIFIED</text>
+  <path fill="url(#divider)" d="M96 214h168v34c0 34-38 62-84 62s-84-28-84-62v-34z" />
+  <text x="180" y="206" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="600" fill="#F2F4F8" text-anchor="middle" letter-spacing="2">AZURE</text>
+  <text x="180" y="238" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">DATA</text>
+  <text x="180" y="266" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">SCIENTIST</text>
+  <text x="180" y="300" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">ASSOCIATE</text>
+  <rect x="138" y="320" width="84" height="16" rx="8" fill="#0F1E46" opacity="0.35" />
+  <g fill="#F8FAFF" transform="translate(124 330)">
+    <circle cx="10" cy="10" r="10" fill="#0F1E46" opacity="0.35" />
+    <path d="M16.4 9.2l-6.3 6.5-4.5-4.6 2.1-2.1 2.4 2.4 4.1-4.2z" />
   </g>
 </svg>

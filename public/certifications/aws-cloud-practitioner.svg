@@ -1,28 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" role="img" aria-labelledby="title desc">
   <title id="title">AWS Certified Cloud Practitioner badge</title>
-  <desc id="desc">Hexagon-shaped AWS certification badge with Cloud Practitioner text.</desc>
+  <desc id="desc">Official style AWS Certified Cloud Practitioner hexagon badge.</desc>
   <defs>
-    <linearGradient id="cpOuter" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F3F5F8" />
-      <stop offset="100%" stop-color="#D7DEE8" />
+    <linearGradient id="outer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E6ECF5" />
+      <stop offset="100%" stop-color="#D2DAE4" />
     </linearGradient>
-    <linearGradient id="cpInner" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#313A49" />
-      <stop offset="100%" stop-color="#1B2330" />
+    <linearGradient id="inner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#324058" />
+      <stop offset="100%" stop-color="#202B3A" />
     </linearGradient>
-    <linearGradient id="cpHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#60708A" />
-      <stop offset="100%" stop-color="#3D4858" />
+    <linearGradient id="bar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#56657C" />
+      <stop offset="100%" stop-color="#3A4657" />
     </linearGradient>
   </defs>
-  <path fill="url(#cpOuter)" d="M256 28l197 114v228L256 484 59 370V142z" stroke="#C3CCD8" stroke-width="12" />
-  <path fill="url(#cpInner)" d="M256 72l159 92v184L256 440 97 348V164z" />
-  <path fill="#FF9900" d="M353 128l-17 29-16-9 17-29-30-17 9-16 30 17 17-29 16 9-17 29 30 17-9 16z" />
-  <text x="140" y="196" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="60" font-weight="700" fill="#FFFFFF">aws</text>
-  <text x="323" y="196" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="36" font-weight="700" fill="#FF9900">certified</text>
-  <path fill="none" stroke="#FF9900" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" d="M165 230c22-20 53-32 91-32 70 0 110 36 110 90 0 55-45 92-115 92-42 0-75-12-96-35" />
-  <text x="256" y="328" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="42" font-weight="700" fill="#FFFFFF" text-anchor="middle">Cloud</text>
-  <text x="256" y="380" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="42" font-weight="700" fill="#FFFFFF" text-anchor="middle">Practitioner</text>
-  <rect x="146" y="398" width="220" height="62" rx="28" fill="url(#cpHighlight)" />
-  <text x="256" y="440" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="600" fill="#FFFFFF" letter-spacing="3" text-anchor="middle">FOUNDATIONAL</text>
+  <path fill="url(#outer)" stroke="#B7C4D5" stroke-width="12" d="M180 18l150 86v172L180 382 30 276V104z" />
+  <path fill="url(#inner)" d="M180 64l114 66v132L180 346 66 262V130z" />
+  <path fill="#FF9900" d="M264 136l-14 24-13-8 14-24-25-14 8-13 25 14 14-24 13 8-14 24 25 14-8 13z" />
+  <g fill="#FFFFFF" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" text-anchor="start">
+    <text x="108" y="188" font-size="56" font-weight="700">aws</text>
+    <text x="210" y="188" font-size="32" font-weight="700" fill="#FF9900">certified</text>
+  </g>
+  <path fill="none" stroke="#FF9900" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" d="M116 218c22-18 53-28 86-28 60 0 98 28 98 76 0 52-42 84-110 84-40 0-70-10-92-30" />
+  <g fill="#FFFFFF" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" text-anchor="middle">
+    <text x="180" y="320" font-size="36" font-weight="700">Cloud</text>
+    <text x="180" y="360" font-size="36" font-weight="700">Practitioner</text>
+  </g>
+  <rect x="114" y="368" width="132" height="40" rx="18" fill="url(#bar)" />
+  <text x="180" y="396" font-family="'Amazon Ember', 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">FOUNDATIONAL</text>
 </svg>
