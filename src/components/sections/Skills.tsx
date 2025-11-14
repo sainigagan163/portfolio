@@ -15,33 +15,30 @@ const Skills = () => {
     { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
     { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg' },
     { name: 'Data Engineering', icon: 'images/dvc-icon.svg' }, // Placeholder icon path
-    { name: 'ETL Pipelines', icon: 'images/mlflow-icon.svg'}, // Placeholder icon path
-    { name: 'FastAPI', icon: 'images/fastapi-icon.svg' }, 
+    { name: 'ETL Pipelines', icon: 'images/mlflow-icon.svg' }, // Placeholder icon path
+    { name: 'FastAPI', icon: 'images/fastapi-icon.svg' },
   ];
 
   const dataVizSkills = [
     { name: 'Power BI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powerbi/powerbi-plain.svg' },
-    { name: 'Tableau', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg' }, 
+    { name: 'Tableau', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg' },
     { name: 'SAS', icon: 'images/pinecone-icon.svg' }, // Placeholder icon path
     { name: 'Data Visualization', icon: 'images/langchain-icon.svg' }, // Placeholder icon path
   ];
 
   const cloudDevOpsSkills = [
     { name: 'AWS', icon: 'images/aws-icon.svg' },
-    { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' }, 
+    { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' },
     { name: 'GCP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg' },
     { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-    { name: 'Automation', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg' }, 
+    { name: 'Automation', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg' },
     { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
   ];
 
   return (
     <section id="skills" className="py-20 bg-slate-900/50 backdrop-blur-sm">
       <div className="max-w-4xl mx-auto px-4">
-        <SectionTitle
-          title="Skills & Technologies"
-          subtitle="A Comprehensive Technical Stack"
-        />
+        <SectionTitle title="Skills & Technologies" subtitle="A Comprehensive Technical Stack" />
         <div className="space-y-8">
           <SkillGrid title="Data Science & Core ML" skills={dataScienceSkills} />
           <SkillGrid title="Programming & Data Engineering" skills={programmingSkills} />
