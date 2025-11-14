@@ -38,9 +38,8 @@ const About: React.FC = () => {
           
           <div className="relative md:sticky md:top-20 flex justify-center pt-8 md:pt-0">
             <div className="w-64 h-64 md:w-80 md:h-80 aspect-square rounded-full overflow-hidden border-4 border-purple-500 shadow-xl">
-              {/* NOTE: Ensure you replace the images/profile.jpg file with your professional photo. */}
               <img
-                src="images/profile.jpg"
+                src="/images/Profile.jpg"
                 alt="Gagan Saini Profile"
                 className="w-full h-full object-cover"
               />
