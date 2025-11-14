@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="awsCloudGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#AC92EB" />
+      <stop offset="100%" stop-color="#4B3F72" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="18" ry="18" fill="#232F3E" />
+  <path d="M45 78h30c10 0 18-8 18-18s-8-18-18-18c-1 0-2 0-3 0-2-9-10-16-20-16-12 0-22 10-22 22 0 2 0 4 1 6-6 3-11 10-11 18 0 11 9 20 20 20h5" fill="none" stroke="url(#awsCloudGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="60" y="104" font-family="'Amazon Ember', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#AC92EB" text-anchor="middle">CLOUD</text>
+</svg>
