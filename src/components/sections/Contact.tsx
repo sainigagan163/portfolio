@@ -40,15 +40,6 @@ const Contact: React.FC = () => {
             label="LinkedIn"
           />
         </div>
-        
-        {/* Placeholder for Contact Form (as requested) */}
-        <div className="max-w-xl mx-auto p-8 bg-slate-800/50 rounded-lg border border-purple-500/20 text-center">
-          <h3 className="text-xl font-semibold mb-4 text-purple-300">Send a Message</h3>
-          <p className="text-gray-400">
-            To integrate a contact form, you will need to add the necessary JSX/logic here (and set up a backend service like AWS Lambda or a form service). For now, please use the direct links above.
-          </p>
-        </div>
-        
       </div>
     </section>
   );
