@@ -81,65 +81,68 @@ const CERTIFICATIONS: Certification[] = [
   },
 ];
 
-const Certifications = () => (
-  <section id="certifications" className="bg-slate-900/70 py-20">
-    <div className="mx-auto max-w-6xl px-4">
-      <SectionTitle
-        title="Certifications"
-        subtitle="Official credentials that reinforce my cloud, data, and AI delivery experience"
-      />
+const Certifications = () => {
+  return (
+    <section id="certifications" className="bg-slate-900/70 py-20">
+      <div className="mx-auto max-w-6xl px-4">
+        <SectionTitle
+          title="Certifications"
+          subtitle="Official credentials that reinforce my cloud, data, and AI delivery experience"
+        />
 
-      <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-3">
-        {CERTIFICATIONS.map((certification) => (
-          <article
-            key={certification.title}
-            className="group flex h-full flex-col rounded-2xl border border-purple-500/10 bg-slate-900/60 p-6 shadow-lg shadow-purple-900/10 transition hover:-translate-y-1 hover:border-purple-400/60 hover:shadow-xl hover:shadow-purple-900/30"
-          >
-            <div className="relative flex h-36 items-center justify-center overflow-hidden rounded-xl bg-slate-950/60">
-              <img
-                src={certification.badge.src}
-                alt={certification.badge.alt}
-                loading="lazy"
-                className="h-full w-full max-w-[200px] object-contain drop-shadow-[0_12px_18px_rgba(168,85,247,0.35)] transition duration-500 group-hover:scale-105"
-              />
-            </div>
+        <div className="grid gap-10 sm:grid-cols-2 xl:grid-cols-3">
+          {CERTIFICATIONS.map((certification) => (
+            <article
+              key={certification.title}
+              className="group flex h-full flex-col rounded-2xl border border-purple-500/10 bg-slate-900/60 p-6 shadow-lg shadow-purple-900/10 transition hover:-translate-y-1 hover:border-purple-400/60 hover:shadow-xl hover:shadow-purple-900/30"
+            >
+              <div className="relative flex h-36 items-center justify-center overflow-hidden rounded-xl bg-slate-950/60">
+                <img
+                  src={certification.badge.src}
+                  alt={certification.badge.alt}
+                  loading="lazy"
+                  className="h-full w-full max-w-[200px] object-contain drop-shadow-[0_12px_18px_rgba(168,85,247,0.35)] transition duration-500 group-hover:scale-105"
+                />
+              </div>
 
-            <div className="mt-6 flex flex-1 flex-col">
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-300/80">
-                {certification.provider}
-              </span>
-              <h3 className="mt-2 text-lg font-semibold text-white">{certification.title}</h3>
-              <p className="mt-1 text-xs font-medium uppercase tracking-[0.35em] text-purple-200/70">
-                {certification.issued}
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-slate-300">{certification.summary}</p>
+              <div className="mt-6 flex flex-1 flex-col">
+                <span className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-300/80">
+                  {certification.provider}
+                </span>
+                <h3 className="mt-2 text-lg font-semibold text-white">{certification.title}</h3>
+                <p className="mt-1 text-xs font-medium uppercase tracking-[0.35em] text-purple-200/70">
+                  {certification.issued}
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-slate-300">{certification.summary}</p>
 
-              <ul className="mt-4 space-y-2 text-sm text-purple-100/90">
-                {certification.highlights.map((highlight) => (
-                  <li key={highlight} className="flex items-center gap-2">
-                    <span className="inline-flex h-1.5 w-1.5 rounded-full bg-purple-400" aria-hidden />
-                    <span>{highlight}</span>
-                  </li>
-                ))}
-              </ul>
+                <ul className="mt-4 space-y-2 text-sm text-purple-100/90" role="list">
+                  {certification.highlights.map((highlight) => (
+                    <li key={highlight} className="flex items-center gap-2">
+                      <span className="inline-flex h-1.5 w-1.5 rounded-full bg-purple-400" aria-hidden />
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
 
-              {certification.verificationUrl && (
-                <a
-                  href={certification.verificationUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-purple-300 transition hover:text-purple-200"
-                >
-                  View credential
-                  <span aria-hidden className="text-base">↗</span>
-                </a>
-              )}
-            </div>
-          </article>
-        ))}
+                {certification.verificationUrl && (
+                  <a
+                    href={certification.verificationUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-purple-300 transition hover:text-purple-200"
+                    aria-label={`View ${certification.title} credential`}
+                  >
+                    View credential
+                    <span aria-hidden className="text-base">↗</span>
+                  </a>
+                )}
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default Certifications;
