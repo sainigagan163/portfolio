@@ -3,7 +3,7 @@ import SectionTitle from '../ui/SectionTitle';
 type Certification = {
   title: string;
   provider: string;
-  issuedOn?: string;
+  issued?: string;
   validThrough?: string;
   summary: string;
   badge: {
@@ -75,7 +75,7 @@ const CERTIFICATIONS: Certification[] = [
   {
     title: 'AWS Certified Developer – Associate',
     provider: 'Amazon Web Services',
-    issuedOn: 'Issued 27 Jul 2023',
+    issued: 'Issued 27 Jul 2023',
     validThrough: 'Valid through 17 Mar 2027',
     summary:
       'Recognizes the ability to build secure, scalable AWS applications leveraging serverless, container, and SDK-driven architectures.',
@@ -95,7 +95,7 @@ const CERTIFICATIONS: Certification[] = [
   {
     title: 'AWS Certified Cloud Practitioner',
     provider: 'Amazon Web Services',
-    issuedOn: 'Issued 13 Mar 2023',
+    issued: 'Issued 13 Mar 2023',
     validThrough: 'Valid through 17 Mar 2027',
     summary:
       'Builds foundational AWS fluency covering architecture, security, compliance, and cost management for cross-functional stakeholders.',
@@ -129,12 +129,12 @@ const Certifications = () => {
               key={certification.title}
               className="group flex h-full flex-col rounded-2xl border border-purple-500/10 bg-slate-900/60 p-6 shadow-lg shadow-purple-900/10 transition hover:-translate-y-1 hover:border-purple-400/60 hover:shadow-xl hover:shadow-purple-900/30"
             >
-              <div className="relative flex h-40 items-center justify-center overflow-hidden rounded-xl bg-slate-950/70">
+              <div className="relative flex h-44 items-center justify-center overflow-hidden rounded-xl bg-slate-950/70">
                 <img
                   src={certification.badge.src}
                   alt={certification.badge.alt}
                   loading="lazy"
-                  className="h-full w-full max-w-[240px] object-contain drop-shadow-[0_12px_18px_rgba(168,85,247,0.35)] transition duration-500 group-hover:scale-105"
+                  className="h-full w-full max-w-[260px] object-contain drop-shadow-[0_12px_18px_rgba(168,85,247,0.35)] transition duration-500 group-hover:scale-105"
                 />
               </div>
 
@@ -144,7 +144,7 @@ const Certifications = () => {
                 </span>
                 <h3 className="mt-2 text-lg font-semibold text-white">{certification.title}</h3>
                 <div className="mt-2 space-y-1 text-[0.7rem] font-semibold uppercase tracking-[0.32em] text-purple-200/70">
-                  {certification.issuedOn && <p>{certification.issuedOn}</p>}
+                  {certification.issued && <p>{certification.issued}</p>}
                   {certification.validThrough && <p>{certification.validThrough}</p>}
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-slate-300">{certification.summary}</p>
