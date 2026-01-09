@@ -13,8 +13,8 @@ const Contact: React.FC = () => {
         />
         <div className="text-center mb-8">
           <p className="text-gray-300 mb-4">
-            I'm always open to new opportunities and collaborations.
-            Feel free to reach out if you'd like to work together!
+            I welcome opportunities in data science, analytics, and MLOps, as well as collaborative projects.
+            Please reach out to discuss how I can contribute.
           </p>
         </div>
         
