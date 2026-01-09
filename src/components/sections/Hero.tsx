@@ -16,20 +16,20 @@ const Hero = () => {
         </h1>
         <TypewriterEffect />
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-          Passionate about transforming complex data into actionable insights.
+          Data Scientist focused on translating complex data into reliable, business-ready insights.
         </p>
         <div className="flex justify-center gap-4">
           <a
             href="#contact"
             className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition-colors"
           >
-            Get in Touch
+            Contact Me
           </a>
           <a
             href="#projects"
             className="px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-full font-medium transition-colors"
           >
-            View Projects
+            View Portfolio
           </a>
         </div>
       </div>
