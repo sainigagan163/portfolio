@@ -60,7 +60,7 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="relative md:sticky md:top-20 flex justify-center pt-8 md:pt-0">
             <div className="w-64 h-64 md:w-80 md:h-80 aspect-square rounded-full overflow-hidden border-4 border-emerald-400 shadow-xl">
               <img
@@ -70,7 +70,6 @@ const About: React.FC = () => {
               />
             </div>
           </div>
-
         </div>
       </div>
     </section>
