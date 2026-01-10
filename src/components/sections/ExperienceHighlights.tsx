@@ -1,17 +1,12 @@
 import React from 'react';
 import SectionTitle from '../ui/SectionTitle';
-import { Award, Briefcase, Cloud, LineChart } from 'lucide-react';
+import { Award, Cloud, LineChart } from 'lucide-react';
 
 const highlights = [
   {
     icon: LineChart,
     title: '18% cost efficiency gain',
     description: 'Operational savings driven by ML-based anomaly detection and automation.',
-  },
-  {
-    icon: Briefcase,
-    title: '2.5+ years professional experience',
-    description: 'Cloud automation and ML-driven analytics delivery across enterprise environments.',
   },
   {
     icon: Cloud,
