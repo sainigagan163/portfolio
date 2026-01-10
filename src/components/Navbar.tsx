@@ -32,7 +32,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <a
               href="#"
-              className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500"
+              className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 via-teal-300 to-sky-400"
             >
               GS
             </a>

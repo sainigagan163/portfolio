@@ -9,7 +9,7 @@ const SectionTitle = ({ title, subtitle }: SectionTitleProps) => {
   return (
     <div className="text-center mb-12">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 via-teal-300 to-sky-400">
           {title}
         </span>
       </h2>

@@ -96,7 +96,7 @@ const Projects: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4">
         <SectionTitle
           title="Projects"
-          subtitle="Recent AI/ML Projects"
+          subtitle="Selected case studies in ML, analytics, and data platforms"
         />
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
