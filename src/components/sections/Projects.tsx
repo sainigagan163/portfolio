@@ -10,6 +10,7 @@ const Projects: React.FC = () => {
       technologies: ['Python', 'TensorFlow', 'Docker', 'AWS', 'GitHub Actions', 'DVC'],
       imageUrl: 'images/projects/chicken-disease.jpg', 
       githubUrl: 'https://github.com/sainigagan163/CNN-Chicken-Disease-Classification', 
+      
     },
     {
       title: 'End-to-End Text Summarizer with AWS',

@@ -19,7 +19,6 @@ const ProjectCard = ({
   liveUrl,
 }: ProjectCardProps) => {
   return (
-    <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg overflow-hidden transition-transform hover:-translate-y-1 border border-purple-500/20">
     <div className="bg-slate-900/60 backdrop-blur-sm rounded-lg overflow-hidden transition-transform hover:-translate-y-1 border border-emerald-400/20">
       <img
         src={imageUrl}
@@ -27,14 +26,12 @@ const ProjectCard = ({
         className="w-full h-48 object-cover object-center"
       />
       <div className="p-6">
-        <h3 className="text-xl font-semibold mb-2 text-purple-300">{title}</h3>
         <h3 className="text-xl font-semibold mb-2 text-emerald-200">{title}</h3>
         <p className="text-gray-300 mb-4">{description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 bg-purple-900/30 border border-purple-500/20 rounded-full text-sm text-purple-200"
               className="px-3 py-1 bg-emerald-500/10 border border-emerald-400/20 rounded-full text-sm text-emerald-100"
             >
               {tech}
@@ -47,7 +44,6 @@ const ProjectCard = ({
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-purple-300 hover:text-purple-400 transition-colors"
               className="flex items-center gap-2 text-emerald-200 hover:text-emerald-100 transition-colors"
             >
               <Github className="w-5 h-5" />
@@ -59,7 +55,6 @@ const ProjectCard = ({
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-purple-300 hover:text-purple-400 transition-colors"
               className="flex items-center gap-2 text-emerald-200 hover:text-emerald-100 transition-colors"
             >
               <ExternalLink className="w-5 h-5" />
@@ -72,5 +67,4 @@ const ProjectCard = ({
   );
 };
 
-export default ProjectCard;
 export default ProjectCard;

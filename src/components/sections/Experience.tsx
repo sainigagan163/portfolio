@@ -2,12 +2,14 @@ import React from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import { Briefcase } from 'lucide-react';
 
-const Experience: React.FC = () => {
+  const Experience: React.FC = () => {
   const highlights = [
-    'Designed and implemented automation pipelines across AWS, Azure, and GCP.',
-    'Developed anomaly-detection ML models, improving operational efficiency and reducing costs by 18%.',
-    'Built Power BI and Tableau dashboards, translating technical findings for senior stakeholders.',
-    'Enabled secure, scalable data applications using Docker and Kubernetes.',
+    'Built ML-driven FinOps solutions using Python, Scikit-learn, and TensorFlow to optimize cloud resource usage across AWS, Azure, and GCP.',
+    'Developed scalable ETL pipelines to process high-volume multi-cloud usage and performance data, enabling data-driven cost and efficiency insights.',
+    'Applied unsupervised learning (DBSCAN, clustering) to identify infrastructure inefficiencies, under-utilized resources, and performance anomalies.',
+    'Automated cloud infrastructure and CI/CD workflows using Terraform, GitHub Actions, Jenkins, and Azure DevOps, improving deployment reliability.',
+    'Created Python automation tools for VM monitoring, disk health analysis, snapshot lifecycle management, and cluster optimization.',
+    'Delivered stakeholder-ready dashboards and analytical reports, translating complex technical data into actionable business recommendations.',
   ];
 
   return (
