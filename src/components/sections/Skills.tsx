@@ -36,7 +36,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-slate-900/50 backdrop-blur-sm">
+    <section id="skills" className="py-20 bg-slate-950/40 backdrop-blur-sm">
       <div className="max-w-4xl mx-auto px-4">
         <SectionTitle title="Skills & Technologies" subtitle="A Comprehensive Technical Stack" />
         <div className="space-y-8">

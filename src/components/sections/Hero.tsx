@@ -1,35 +1,41 @@
 import React from 'react';
 import ParticleBackground from '../ParticleBackground';
-import TypewriterEffect from '../TypewriterEffect';
 import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <ParticleBackground />
-      <div className="relative z-10 text-center space-y-6 max-w-4xl mx-auto px-4">
+      <div className="relative z-10 flex flex-col items-center text-center space-y-6 max-w-5xl mx-auto px-4">
         <h1 className="text-4xl md:text-6xl font-bold">
-          Hi, I'm{' '}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-            Gagan Saini
+          Gagan{' '}
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 via-teal-400 to-indigo-500">
+            Saini
           </span>
         </h1>
-        <TypewriterEffect />
-        <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-          Passionate about transforming complex data into actionable insights.
+        <p className="text-xl md:text-2xl text-slate-200 font-medium">
+          Data Scientist • MLOps Engineer • Cloud Analytics
         </p>
-        <div className="flex justify-center gap-4">
+        <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+          Delivering scalable data analytics and machine-learning solutions to support informed business decision-making.
+        </p>
+        <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-gray-300">
+          <span className="rounded-full border border-emerald-400/30 bg-slate-900/60 px-4 py-2">Aberdeen, UK</span>
+          <span className="rounded-full border border-emerald-400/30 bg-slate-900/60 px-4 py-2">AWS · Azure Certified</span>
+          <span className="rounded-full border border-emerald-400/30 bg-slate-900/60 px-4 py-2">Open to full-time roles</span>
+        </div>
+        <div className="flex flex-wrap justify-center gap-4">
           <a
             href="#contact"
-            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition-colors"
+            className="px-8 py-3 bg-emerald-400 hover:bg-emerald-300 text-slate-900 rounded-full font-semibold transition-colors shadow-lg shadow-emerald-500/20"
           >
             Get in Touch
           </a>
           <a
-            href="#projects"
-            className="px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-full font-medium transition-colors"
+            href="#experience"
+            className="px-8 py-3 bg-gray-800 hover:bg-gray-700 rounded-full font-semibold transition-colors"
           >
-            View Projects
+            View Key Achievements
           </a>
         </div>
       </div>
