@@ -46,7 +46,6 @@ const About: React.FC = () => {
                 B.Tech Civil Engineering, Ajay Kumar Garg Engineering College, India, Dr. A.P.J. Abdul Kalam Technical University (2017–2021)
               </p>
             </div>
-
           </div>
           
           <div className="relative md:sticky md:top-20 flex justify-center pt-8 md:pt-0">
@@ -58,7 +57,6 @@ const About: React.FC = () => {
               />
             </div>
           </div>
-
         </div>
       </div>
     </section>
