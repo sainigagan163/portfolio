@@ -1,16 +1,12 @@
 import React from 'react';
 import ParticleBackground from '../ParticleBackground';
-import { ArrowDown, BarChart3, Cloud, Cpu, LineChart } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <ParticleBackground />
       <div className="relative z-10 flex flex-col items-center text-center space-y-6 max-w-5xl mx-auto px-4">
-        <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-slate-900/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-emerald-200 shadow-lg shadow-emerald-500/10">
-          <span className="h-2 w-2 rounded-full bg-emerald-400" />
-          Available for Data Science & MLOps Roles
-        </div>
         <h1 className="text-4xl md:text-6xl font-bold">
           Gagan{' '}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 via-teal-400 to-indigo-500">
@@ -21,7 +17,7 @@ const Hero = () => {
           Data Scientist • MLOps Engineer • Cloud Analytics
         </p>
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-          I build production-grade ML systems, resilient data pipelines, and decision-ready analytics for organizations scaling AI responsibly.
+          Delivering scalable data analytics and machine-learning solutions to support informed business decision-making.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-gray-300">
           <span className="rounded-full border border-emerald-400/30 bg-slate-900/60 px-4 py-2">Aberdeen, UK</span>
@@ -36,46 +32,11 @@ const Hero = () => {
             Get in Touch
           </a>
           <a
-            href="#projects"
+            href="#experience"
             className="px-8 py-3 bg-gray-800 hover:bg-gray-700 rounded-full font-semibold transition-colors"
           >
-            View Case Studies
+            View Key Achievements
           </a>
-        </div>
-        <div className="grid w-full gap-4 pt-6 md:grid-cols-4">
-          {[
-            {
-              icon: LineChart,
-              value: '18%',
-              label: 'Ops cost reduction',
-            },
-            {
-              icon: Cpu,
-              value: '4+',
-              label: 'Years experience',
-            },
-            {
-              icon: BarChart3,
-              value: '20+',
-              label: 'Dashboards delivered',
-            },
-            {
-              icon: Cloud,
-              value: '3',
-              label: 'Cloud platforms',
-            },
-          ].map(({ icon: Icon, value, label }) => (
-            <div
-              key={label}
-              className="rounded-2xl border border-emerald-400/20 bg-slate-900/60 p-5 text-left shadow-lg shadow-emerald-500/10"
-            >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900/80 text-emerald-300">
-                <Icon className="h-5 w-5" />
-              </div>
-              <p className="mt-4 text-2xl font-semibold text-white">{value}</p>
-              <p className="text-sm text-gray-300">{label}</p>
-            </div>
-          ))}
         </div>
       </div>
       <a

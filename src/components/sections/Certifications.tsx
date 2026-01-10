@@ -28,7 +28,7 @@ const CERTIFICATIONS: Certification[] = [
       'Responsible AI guardrails',
     ],
     badge: {
-      src: '/certifications/azure-ai-engineer.svg',
+      src: `${import.meta.env.BASE_URL}certifications/azure-ai-engineer.svg`,
       alt: 'Microsoft Certified Azure AI Engineer Associate badge',
     },
     verificationUrl:
@@ -47,7 +47,7 @@ const CERTIFICATIONS: Certification[] = [
       'Model deployment & monitoring',
     ],
     badge: {
-      src: '/certifications/azure-data-scientist.svg',
+      src: `${import.meta.env.BASE_URL}certifications/azure-data-scientist.svg`,
       alt: 'Microsoft Certified Azure Data Scientist Associate badge',
     },
     verificationUrl:
@@ -66,7 +66,7 @@ const CERTIFICATIONS: Certification[] = [
       'Security and compliance automation',
     ],
     badge: {
-      src: '/certifications/aws-devops-pro.svg',
+      src: `${import.meta.env.BASE_URL}certifications/aws-devops-pro.svg`,
       alt: 'AWS Certified DevOps Engineer Professional badge',
     },
     verificationUrl:
@@ -85,7 +85,7 @@ const CERTIFICATIONS: Certification[] = [
       'Performance optimization & caching',
     ],
     badge: {
-      src: '/certifications/aws-developer-assoc.svg',
+      src: `${import.meta.env.BASE_URL}certifications/aws-developer-assoc.svg`,
       alt: 'AWS Certified Developer Associate badge',
     },
     verificationUrl:
@@ -104,7 +104,7 @@ const CERTIFICATIONS: Certification[] = [
       'Cost optimization & billing best practices',
     ],
     badge: {
-      src: '/certifications/aws-cloud-practitioner.svg',
+      src: `${import.meta.env.BASE_URL}certifications/aws-cloud-practitioner.svg`,
       alt: 'AWS Certified Cloud Practitioner badge',
     },
     verificationUrl:
