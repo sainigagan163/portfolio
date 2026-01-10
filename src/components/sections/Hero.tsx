@@ -31,12 +31,6 @@ const Hero = () => {
           >
             Get in Touch
           </a>
-          <a
-            href="#achievements"
-            className="px-8 py-3 bg-gray-800 hover:bg-gray-700 rounded-full font-semibold transition-colors"
-          >
-            View Key Achievements
-          </a>
         </div>
       </div>
       <a
