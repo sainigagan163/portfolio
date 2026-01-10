@@ -1,17 +1,12 @@
 import React from 'react';
 import SectionTitle from '../ui/SectionTitle';
-import { Award, Briefcase, Cloud, LineChart } from 'lucide-react';
+import { Award, Cloud, LineChart } from 'lucide-react';
 
 const highlights = [
   {
     icon: LineChart,
     title: '18% cost efficiency gain',
     description: 'Operational savings driven by ML-based anomaly detection and automation.',
-  },
-  {
-    icon: Briefcase,
-    title: '2.5+ years professional experience',
-    description: 'Cloud automation and ML-driven analytics delivery across enterprise environments.',
   },
   {
     icon: Cloud,
@@ -33,11 +28,11 @@ const ExperienceHighlights = () => {
           title="Key Achievements"
           subtitle="Experience highlights and delivery outcomes in one view"
         />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
           {highlights.map(({ icon: Icon, title, description }) => (
             <div
               key={title}
-              className="rounded-2xl border border-emerald-400/20 bg-slate-900/60 p-6 shadow-lg shadow-emerald-500/10"
+              className="flex max-w-sm flex-col items-center rounded-2xl border border-emerald-400/20 bg-slate-900/60 p-6 text-center shadow-lg shadow-emerald-500/10"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-900/80 text-emerald-300">
                 <Icon className="h-6 w-6" />
