@@ -13,8 +13,8 @@ const Contact: React.FC = () => {
         />
         <div className="text-center mb-8">
           <p className="text-gray-300 mb-4">
-            I welcome opportunities in data science, analytics, and MLOps, as well as consulting and collaborative projects.
-            Reach out to discuss how I can support your data initiatives.
+            I welcome opportunities in data science, analytics, and MLOps, including consulting and collaborative projects.
+            Reach out to discuss how I can support your data initiatives and delivery goals.
           </p>
         </div>
         

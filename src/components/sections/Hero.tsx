@@ -9,7 +9,7 @@ const Hero = () => {
       <ParticleBackground />
       <div className="relative z-10 text-center space-y-6 max-w-4xl mx-auto px-4">
         <div className="text-sm uppercase tracking-[0.35em] text-purple-300/80">
-          Data Scientist • MLOps • Cloud Analytics
+          Data Scientist • MLOps Engineer • Cloud Analytics
         </div>
         <h1 className="text-4xl md:text-6xl font-bold">
           Hi, I'm{' '}
@@ -19,25 +19,25 @@ const Hero = () => {
         </h1>
         <TypewriterEffect />
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-          Building production-ready machine learning systems, reliable data pipelines, and analytics that drive measurable outcomes.
+          I deliver production-ready ML systems, dependable data pipelines, and executive-ready analytics that drive measurable outcomes.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-gray-300">
           <span className="rounded-full border border-purple-400/40 bg-slate-900/60 px-4 py-2">Aberdeen, UK</span>
           <span className="rounded-full border border-purple-400/40 bg-slate-900/60 px-4 py-2">AWS · Azure Certified</span>
-          <span className="rounded-full border border-purple-400/40 bg-slate-900/60 px-4 py-2">Open to roles</span>
+          <span className="rounded-full border border-purple-400/40 bg-slate-900/60 px-4 py-2">Open to full-time roles</span>
         </div>
         <div className="flex justify-center gap-4">
           <a
             href="#contact"
             className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full font-medium transition-colors"
           >
-            Let's Talk
+            Schedule a Call
           </a>
           <a
             href="#projects"
             className="px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-full font-medium transition-colors"
           >
-            View Work
+            View Case Studies
           </a>
         </div>
       </div>

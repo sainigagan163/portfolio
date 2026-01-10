@@ -7,13 +7,13 @@ const About: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4">
         <SectionTitle
           title="About Me"
-          subtitle="Data science, MLOps, and analytics expertise grounded in business impact"
+          subtitle="Data science, MLOps, and analytics expertise anchored in business outcomes"
         />
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-blue-400">Professional Bio</h3>
+            <h3 className="text-2xl font-semibold text-blue-400">Professional Summary</h3>
             <p className="text-gray-300">
-              I am a postgraduate Data Science student at the University of Aberdeen with hands-on experience delivering machine learning solutions, data automation, and cloud-based analytics. My focus spans predictive modeling, MLOps, and scalable pipelines that connect technical work to measurable business outcomes. I enjoy partnering with cross-functional teams to translate complex data into clear, actionable recommendations.
+              I am a postgraduate Data Science student at the University of Aberdeen with hands-on experience delivering machine learning solutions, data automation, and cloud-based analytics. My work spans predictive modeling, MLOps, and scalable pipelines that connect technical delivery to measurable business outcomes. I partner with cross-functional teams to translate complex data into clear, decision-ready insights.
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2">
@@ -23,8 +23,8 @@ const About: React.FC = () => {
                 </p>
                 <ul className="mt-3 space-y-2 text-sm text-gray-300">
                   <li>Production-ready ML workflows and deployment pipelines</li>
-                  <li>Data quality automation and monitoring for reliability</li>
-                  <li>Analytics storytelling that drives executive alignment</li>
+                  <li>Data quality automation, monitoring, and alerting</li>
+                  <li>Analytics storytelling for leadership alignment</li>
                 </ul>
               </div>
               <div className="rounded-xl border border-purple-500/20 bg-slate-900/60 p-4">
@@ -34,7 +34,7 @@ const About: React.FC = () => {
                 <ul className="mt-3 space-y-2 text-sm text-gray-300">
                   <li>Predictive analytics and anomaly detection</li>
                   <li>Cloud-native data platforms on AWS and Azure</li>
-                  <li>Responsible AI and model governance</li>
+                  <li>Responsible AI, security, and model governance</li>
                 </ul>
               </div>
             </div>
