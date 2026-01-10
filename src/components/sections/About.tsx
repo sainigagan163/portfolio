@@ -11,14 +11,14 @@ const About: React.FC = () => {
         />
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-blue-400">Professional Summary</h3>
+            <h3 className="text-2xl font-semibold text-emerald-200">Professional Summary</h3>
             <p className="text-gray-300">
               I am a postgraduate Data Science student at the University of Aberdeen with hands-on experience delivering machine learning solutions, data automation, and cloud-based analytics. My work spans predictive modeling, MLOps, and scalable pipelines that connect technical delivery to measurable business outcomes. I partner with cross-functional teams to translate complex data into clear, decision-ready insights.
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-xl border border-purple-500/20 bg-slate-900/60 p-4">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-purple-300/80">
+              <div className="rounded-xl border border-emerald-400/20 bg-slate-900/60 p-4">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200/80">
                   What I deliver
                 </p>
                 <ul className="mt-3 space-y-2 text-sm text-gray-300">
@@ -27,8 +27,8 @@ const About: React.FC = () => {
                   <li>Analytics storytelling for leadership alignment</li>
                 </ul>
               </div>
-              <div className="rounded-xl border border-purple-500/20 bg-slate-900/60 p-4">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-purple-300/80">
+              <div className="rounded-xl border border-emerald-400/20 bg-slate-900/60 p-4">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200/80">
                   Core focus
                 </p>
                 <ul className="mt-3 space-y-2 text-sm text-gray-300">
@@ -39,7 +39,7 @@ const About: React.FC = () => {
               </div>
             </div>
 
-            <h3 className="text-2xl font-semibold text-blue-400 pt-4">Education</h3>
+            <h3 className="text-2xl font-semibold text-emerald-200 pt-4">Education</h3>
             <div className="space-y-2">
               <p className="text-gray-300 font-medium">MSc Data Science, University of Aberdeen, UK (Jan 2025 – Present)</p>
               <p className="text-gray-300 font-medium">
@@ -47,10 +47,10 @@ const About: React.FC = () => {
               </p>
             </div>
 
-            <h3 className="text-2xl font-semibold text-blue-400 pt-4">Experience</h3>
+            <h3 className="text-2xl font-semibold text-emerald-200 pt-4">Experience</h3>
             <div className="space-y-4">
-              <div className="p-4 bg-slate-800/50 rounded-lg border border-purple-500/20">
-                <h4 className="text-lg font-semibold text-purple-300">DevOps Engineer I, CloudEQ Software India Pvt. Ltd. (07/2022 – 12/2024)</h4>
+              <div className="p-4 bg-slate-900/60 rounded-lg border border-emerald-400/20">
+                <h4 className="text-lg font-semibold text-emerald-200">DevOps Engineer I, CloudEQ Software India Pvt. Ltd. (07/2022 – 12/2024)</h4>
                 <ul className="list-disc list-inside text-gray-300 ml-4 mt-2 space-y-1">
                   <li>Designed and implemented automation pipelines across AWS, Azure, and GCP.</li>
                   <li>Developed anomaly-detection ML models, improving operational efficiency and reducing costs by 18%.</li>
@@ -62,7 +62,7 @@ const About: React.FC = () => {
           </div>
 
           <div className="relative md:sticky md:top-20 flex justify-center pt-8 md:pt-0">
-            <div className="w-64 h-64 md:w-80 md:h-80 aspect-square rounded-full overflow-hidden border-4 border-purple-500 shadow-xl">
+            <div className="w-64 h-64 md:w-80 md:h-80 aspect-square rounded-full overflow-hidden border-4 border-emerald-400 shadow-xl">
               <img
                 src="/images/Profile.jpg"
                 alt="Gagan Saini Profile"

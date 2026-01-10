@@ -1,6 +1,5 @@
 import React from 'react';
 import ParticleBackground from '../ParticleBackground';
-import TypewriterEffect from '../TypewriterEffect';
 import { ArrowDown, BarChart3, Cloud, Cpu, LineChart } from 'lucide-react';
 
 const Hero = () => {
@@ -25,9 +24,9 @@ const Hero = () => {
           I build production-grade ML systems, resilient data pipelines, and decision-ready analytics for organizations scaling AI responsibly.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-gray-300">
-          <span className="rounded-full border border-purple-400/40 bg-slate-900/60 px-4 py-2">Aberdeen, UK</span>
-          <span className="rounded-full border border-purple-400/40 bg-slate-900/60 px-4 py-2">AWS · Azure Certified</span>
-          <span className="rounded-full border border-purple-400/40 bg-slate-900/60 px-4 py-2">Open to full-time roles</span>
+          <span className="rounded-full border border-emerald-400/30 bg-slate-900/60 px-4 py-2">Aberdeen, UK</span>
+          <span className="rounded-full border border-emerald-400/30 bg-slate-900/60 px-4 py-2">AWS · Azure Certified</span>
+          <span className="rounded-full border border-emerald-400/30 bg-slate-900/60 px-4 py-2">Open to full-time roles</span>
         </div>
         <div className="flex flex-wrap justify-center gap-4">
           <a

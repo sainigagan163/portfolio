@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, Phone } from 'lucide-react'; // Added Phone imp
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-20 bg-slate-900/50 backdrop-blur-sm">
+    <section id="contact" className="py-20 bg-slate-950/40 backdrop-blur-sm">
       <div className="max-w-4xl mx-auto px-4">
         <SectionTitle
           title="Get in Touch"

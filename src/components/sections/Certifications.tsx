@@ -128,7 +128,7 @@ const Certifications = () => {
               href={certification.verificationUrl}
               target="_blank"
               rel="noreferrer"
-              className="group flex flex-col items-center justify-between rounded-2xl border border-purple-500/10 bg-slate-900/60 p-6 text-center shadow-lg shadow-purple-900/10 transition hover:-translate-y-1 hover:border-purple-400/60 hover:shadow-xl hover:shadow-purple-900/30"
+              className="group flex flex-col items-center justify-between rounded-2xl border border-emerald-400/20 bg-slate-900/60 p-6 text-center shadow-lg shadow-emerald-900/10 transition hover:-translate-y-1 hover:border-emerald-300/60 hover:shadow-xl hover:shadow-emerald-900/30"
               aria-label={`View ${certification.title} credential`}
             >
               <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-xl bg-slate-950/70">
@@ -136,19 +136,19 @@ const Certifications = () => {
                   src={certification.badge.src}
                   alt={certification.badge.alt}
                   loading="lazy"
-                  className="h-full w-full object-contain drop-shadow-[0_12px_18px_rgba(168,85,247,0.35)] transition duration-500 group-hover:scale-105"
+                  className="h-full w-full object-contain drop-shadow-[0_12px_18px_rgba(16,185,129,0.35)] transition duration-500 group-hover:scale-105"
                 />
               </div>
 
               <div className="mt-4 flex flex-col items-center gap-1">
-                <span className="text-xs font-semibold uppercase tracking-[0.25em] text-purple-300/80">
+                <span className="text-xs font-semibold uppercase tracking-[0.25em] text-emerald-200/80">
                   {certification.provider}
                 </span>
                 <h3 className="text-sm font-semibold text-white sm:text-base">
                   {certification.title}
                 </h3>
                 {(certification.issued || certification.validThrough) && (
-                  <p className="text-[0.65rem] font-semibold uppercase tracking-[0.32em] text-purple-200/70">
+                  <p className="text-[0.65rem] font-semibold uppercase tracking-[0.32em] text-emerald-200/70">
                     {[certification.issued, certification.validThrough].filter(Boolean).join(' · ')}
                   </p>
                 )}
