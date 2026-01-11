@@ -3,7 +3,7 @@ import SkillGrid from '../SkillGrid';
 
 const Skills = () => {
   const dataScienceSkills = [
-    { name: 'Machine Learning', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
+    { name: 'Machine Learning', icon: 'images/machine-learning-icon.png' },
     { name: 'Predictive Analytics', icon: 'images/rag-icon.svg' }, // Placeholder icon path
     { name: 'Statistical Modelling', icon: 'images/fastapi-icon.svg' }, // Placeholder icon path
     { name: 'TensorFlow', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' },
@@ -20,8 +20,8 @@ const Skills = () => {
   ];
 
   const dataVizSkills = [
-    { name: 'Power BI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powerbi/powerbi-plain.svg' },
-    { name: 'Tableau', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg' },
+    { name: 'Power BI', icon: 'images/power-bi.png' },
+    { name: 'Tableau', icon: 'images/Tableau-Logo.png' },
     { name: 'SAS', icon: 'images/pinecone-icon.svg' }, // Placeholder icon path
     { name: 'Data Visualization', icon: 'images/langchain-icon.svg' }, // Placeholder icon path
   ];
@@ -31,7 +31,7 @@ const Skills = () => {
     { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' },
     { name: 'GCP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg' },
     { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-    { name: 'FinOps', icon: 'images/finops-icon.svg' },
+    { name: 'FinOps', icon: 'images/finops.png' },
     { name: 'Automation', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg' },
     { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
   ];
