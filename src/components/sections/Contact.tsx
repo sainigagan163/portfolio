@@ -1,9 +1,11 @@
 import React from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import SocialLink from '../ui/SocialLink';
-import { Github, Linkedin, Mail, Phone } from 'lucide-react'; // Added Phone import
+import { FileText, Github, Linkedin, Mail, Phone } from 'lucide-react'; // Added Phone import
 
 const Contact: React.FC = () => {
+  const resumeHref = `${import.meta.env.BASE_URL}Gagan%20Saini%20Resume.pdf`;
+
   return (
     <section id="contact" className="py-20 bg-slate-950/40 backdrop-blur-sm">
       <div className="max-w-4xl mx-auto px-4">
@@ -39,6 +41,15 @@ const Contact: React.FC = () => {
             icon={Linkedin}
             label="LinkedIn"
           />
+          <a
+            href={resumeHref}
+            download="Gagan Saini Resume.pdf"
+            type="application/pdf"
+            className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+          >
+            <FileText className="w-5 h-5" />
+            <span>Resume</span>
+          </a>
         </div>
       </div>
     </section>
