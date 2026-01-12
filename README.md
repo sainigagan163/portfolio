@@ -1,6 +1,6 @@
 # Portfolio
 
-An interactive single-page portfolio for showcasing Gagan Saini's background as a data scientist and DevOps engineer. The site is built with React, TypeScript, Vite, and Tailwind CSS, and it ships with prebuilt sections for biography, skills, certifications, projects, and contact information.
+A polished, single-page portfolio for showcasing Gagan Saini's background in data science, MLOps, and cloud analytics. Built with React, TypeScript, Vite, and Tailwind CSS, it delivers a fast, responsive experience with structured sections for biography, skills, certifications, projects, and contact details.
 
 ## Table of Contents
 - [Features](#features)
@@ -12,13 +12,13 @@ An interactive single-page portfolio for showcasing Gagan Saini's background as 
 - [Assets](#assets)
 
 ## Features
-- **Hero with animated background** – `ParticleBackground` and the `TypewriterEffect` component introduce the portfolio with animated copy, strong CTA buttons, and a bouncing scroll indicator.
-- **Sticky navigation** – The responsive `Navbar` collapses into a drawer on mobile devices and gains a translucent background when the user scrolls.
-- **Story-driven About section** – Highlights bio, education, and experience with a floating profile photo.
-- **Skill matrices** – `SkillGrid` renders categorized skill badges for ML, programming, BI, and cloud tooling.
-- **Certification gallery** – `Certifications` presents deep links to verifiable badges with accessible markup.
-- **Project cards** – A grid of `ProjectCard` entries showcases recent AI/ML, DevOps, and web projects.
-- **Contact panel** – `SocialLink` buttons surface preferred contact channels (email, phone, GitHub, LinkedIn).
+- **Hero with animated background** – `ParticleBackground` and the `TypewriterEffect` component introduce the portfolio with animated copy and a bouncing scroll indicator.
+- **Sticky navigation with resume CTA** – The responsive `Navbar` collapses into a drawer on mobile devices, gains a translucent background on scroll, and highlights a resume download button.
+- **About section** – Bio, education, and experience highlights paired with a profile photo.
+- **Skill matrices** – `SkillGrid` renders categorized badges for ML, programming, BI, and cloud tooling.
+- **Certification gallery** – `Certifications` provides verifiable badge links with accessible markup.
+- **Project showcase** – A grid of `ProjectCard` entries for AI/ML, DevOps, and web projects.
+- **Contact panel** – `SocialLink` entries for email, phone, GitHub, and LinkedIn, alongside a resume download link.
 
 ## Tech Stack
 - [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
@@ -82,12 +82,13 @@ portfolio/
 ```
 
 ## Customizing Content
-- **Hero CTA & tagline** – Edit copy inside `src/components/sections/Hero.tsx`.
-- **About section** – Update biography text, education, and experience cards in `src/components/sections/About.tsx`.
-- **Skills** – Modify the categorized `dataScienceSkills`, `programmingSkills`, etc. arrays inside `src/components/sections/Skills.tsx` (ensure referenced icons exist in `public/images`).
-- **Certifications** – Add/remove entries in the `CERTIFICATIONS` array inside `src/components/sections/Certifications.tsx` (each item expects a badge image and verification URL).
-- **Projects** – Update the `projects` array within `src/components/sections/Projects.tsx` to change cards, images, and tech stacks.
-- **Contact links** – Adjust the `SocialLink` targets in `src/components/sections/Contact.tsx`.
+- **Hero copy** – Update text in `src/components/sections/Hero.tsx`.
+- **Resume download** – Replace `public/Gagan Saini Resume.pdf` and adjust the resume link target in `src/components/Navbar.tsx` or `src/components/sections/Contact.tsx` if the filename changes.
+- **About section** – Edit biography text, education, and experience cards in `src/components/sections/About.tsx`.
+- **Skills** – Update the categorized `dataScienceSkills`, `programmingSkills`, etc. arrays in `src/components/sections/Skills.tsx` (ensure referenced icons exist in `public/images`).
+- **Certifications** – Add or remove entries in the `CERTIFICATIONS` array in `src/components/sections/Certifications.tsx` (each item expects a badge image and verification URL).
+- **Projects** – Update the `projects` array in `src/components/sections/Projects.tsx` to change cards, images, and tech stacks.
+- **Contact links** – Adjust `SocialLink` targets in `src/components/sections/Contact.tsx`.
 
 ## Deployment
 The repository is preconfigured for GitHub Pages through the `homepage`, `predeploy`, and `deploy` scripts in `package.json`.
@@ -99,6 +100,6 @@ This command builds the site and publishes the `dist/` folder to the `gh-pages` 
 
 ## Assets
 - Place profile photos, skill icons, and project images under `public/images/...` to ensure they are copied into the production build.
-- Certification badges live in `public/certifications/` and can be swapped with custom SVGs.
+- Certification badges live in `public/certifications/` and can be swapped with custom PNGs.
 
 Feel free to fork the project and tailor the content, styles, or components to match your personal brand.
