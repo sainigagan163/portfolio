@@ -20,7 +20,7 @@ const Hero = () => {
           Delivering scalable data analytics and machine-learning solutions to support informed business decision-making.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-gray-300">
-          <span className="rounded-full border border-emerald-400/30 bg-slate-900/60 px-4 py-2">Aberdeen, UK</span>
+          <span className="rounded-full border border-emerald-400/30 bg-slate-900/60 px-4 py-2">United Kingdom</span>
           <span className="rounded-full border border-emerald-400/30 bg-slate-900/60 px-4 py-2">AWS · Azure Certified</span>
           <span className="rounded-full border border-emerald-400/30 bg-slate-900/60 px-4 py-2">Open to full-time roles</span>
         </div>
