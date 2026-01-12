@@ -54,8 +54,9 @@ const Navbar = () => {
               ))}
               <a
                 href={resumeHref}
-                download
-                className="text-emerald-200 hover:text-white px-3 py-2 rounded-md text-sm font-semibold transition-colors"
+                download="Gagan Saini Resume.pdf"
+                type="application/pdf"
+                className="px-4 py-2 bg-emerald-400 hover:bg-emerald-300 text-slate-900 rounded-full text-sm font-semibold transition-colors shadow-lg shadow-emerald-500/20"
               >
                 Hire Me
               </a>
@@ -89,8 +90,9 @@ const Navbar = () => {
               ))}
               <a
                 href={resumeHref}
-                download
-                className="text-emerald-200 hover:text-white block px-3 py-2 rounded-md text-base font-semibold"
+                download="Gagan Saini Resume.pdf"
+                type="application/pdf"
+                className="inline-flex items-center justify-center bg-emerald-400 hover:bg-emerald-300 text-slate-900 px-4 py-2 rounded-full text-base font-semibold transition-colors shadow-lg shadow-emerald-500/20"
                 onClick={() => setIsOpen(false)}
               >
                 Hire Me
