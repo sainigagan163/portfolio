@@ -35,3 +35,48 @@ An interactive single-page portfolio for showcasing Gagan Saini's background as 
 ### Installation
 ```bash
 npm install
+Local development
+npm run dev
+This starts Vite's dev server and enables hot module replacement.
+Production build
+npm run build
+TypeScript emits type declarations and Vite outputs the static site in dist/.
+Preview the production build
+npm run preview
+Linting
+npm run lint
+Runs ESLint with the TypeScript + React rules configured in the project.
+Project Structure
+portfolio/
+├─ public/
+│  ├─ certifications/       # SVG badges displayed in Certifications
+│  └─ images/               # Project thumbnails, skill icons, profile photo
+├─ src/
+│  ├─ App.tsx               # Page composition and global gradient background
+│  ├─ main.tsx              # React entry point
+│  ├─ index.css             # Tailwind layers + global styles
+│  └─ components/
+│     ├─ Navbar.tsx         # Sticky nav with scroll detection
+│     ├─ ParticleBackground.tsx
+│     ├─ TypewriterEffect.tsx
+│     ├─ ProjectCard.tsx & SkillGrid.tsx
+│     ├─ sections/          # Hero, About, Skills, Certifications, Projects, Contact
+│     └─ ui/                # SectionTitle, SocialLink, and other UI primitives
+├─ package.json             # Scripts (dev/build/deploy) and dependencies
+└─ tailwind.config.js       # Tailwind theme configuration
+Customizing Content
+Hero copy – Edit copy inside src/components/sections/Hero.tsx.
+Resume download – Replace public/Gagan Saini Resume.pdf and adjust the resume link target in src/components/Navbar.tsx or src/components/sections/Contact.tsx if the filename changes.
+About section – Update biography text, education, and experience cards in src/components/sections/About.tsx.
+Skills – Modify the categorized dataScienceSkills, programmingSkills, etc. arrays inside src/components/sections/Skills.tsx (ensure referenced icons exist in public/images).
+Certifications – Add/remove entries in the CERTIFICATIONS array inside src/components/sections/Certifications.tsx (each item expects a badge image and verification URL).
+Projects – Update the projects array within src/components/sections/Projects.tsx to change cards, images, and tech stacks.
+Contact links – Adjust the SocialLink targets in src/components/sections/Contact.tsx.
+Deployment
+The repository is preconfigured for GitHub Pages through the homepage, predeploy, and deploy scripts in package.json.
+npm run deploy
+This command builds the site and publishes the dist/ folder to the gh-pages branch using the gh-pages CLI.
+Assets
+Place profile photos, skill icons, and project images under public/images/... to ensure they are copied into the production build.
+Certification badges live in public/certifications/ and can be swapped with custom PNGs.
+Feel free to fork the project and tailor the content, styles, or components to match your personal brand.
