@@ -6,7 +6,6 @@ An interactive single-page portfolio for showcasing Gagan Saini's background as 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Quick Start](#quick-start)
-- [Project Structure](#project-structure)
 - [Customizing Content](#customizing-content)
 - [Deployment](#deployment)
 - [Assets](#assets)
@@ -17,7 +16,6 @@ An interactive single-page portfolio for showcasing Gagan Saini's background as 
 - **Story-driven About section** – Highlights bio, education, and experience with a floating profile photo.
 - **Skill matrices** – `SkillGrid` renders categorized skill badges for ML, programming, BI, and cloud tooling.
 - **Certification gallery** – `Certifications` presents deep links to verifiable badges with accessible markup.
-- **Project cards** – A grid of `ProjectCard` entries showcases recent AI/ML, DevOps, and web projects.
 - **Contact panel** – `SocialLink` buttons surface preferred contact channels (email, phone, GitHub, LinkedIn).
 
 ## Tech Stack
