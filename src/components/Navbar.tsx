@@ -21,6 +21,7 @@ const Navbar = () => {
     { href: '#certifications', label: 'Certifications' },
     { href: '#contact', label: 'Contact' },
   ];
+  const resumeHref = `${import.meta.env.BASE_URL}Gagan%20Saini%20Resume.pdf`;
 
   return (
     <nav
@@ -51,6 +52,13 @@ const Navbar = () => {
                   {label}
                 </a>
               ))}
+              <a
+                href={resumeHref}
+                download
+                className="text-emerald-200 hover:text-white px-3 py-2 rounded-md text-sm font-semibold transition-colors"
+              >
+                Hire Me
+              </a>
             </div>
           </div>
 
@@ -79,6 +87,14 @@ const Navbar = () => {
                   {label}
                 </a>
               ))}
+              <a
+                href={resumeHref}
+                download
+                className="text-emerald-200 hover:text-white block px-3 py-2 rounded-md text-base font-semibold"
+                onClick={() => setIsOpen(false)}
+              >
+                Hire Me
+              </a>
             </div>
           </div>
         )}
