@@ -12,13 +12,13 @@ An interactive single-page portfolio for showcasing Gagan Saini's background as 
 - [Assets](#assets)
 
 ## Features
-- **Hero with animated background** – `ParticleBackground` and the `TypewriterEffect` component introduce the portfolio with animated copy, strong CTA buttons, and a bouncing scroll indicator.
-- **Sticky navigation** – The responsive `Navbar` collapses into a drawer on mobile devices and gains a translucent background when the user scrolls.
+- **Hero with animated background** – `ParticleBackground` and the `TypewriterEffect` component introduce the portfolio with animated copy and a bouncing scroll indicator.
+- **Sticky navigation with resume CTA** – The responsive `Navbar` collapses into a drawer on mobile devices, gains a translucent background on scroll, and includes a highlighted resume download button.
 - **Story-driven About section** – Highlights bio, education, and experience with a floating profile photo.
 - **Skill matrices** – `SkillGrid` renders categorized skill badges for ML, programming, BI, and cloud tooling.
 - **Certification gallery** – `Certifications` presents deep links to verifiable badges with accessible markup.
 - **Project cards** – A grid of `ProjectCard` entries showcases recent AI/ML, DevOps, and web projects.
-- **Contact panel** – `SocialLink` buttons surface preferred contact channels (email, phone, GitHub, LinkedIn).
+- **Contact panel** – `SocialLink` buttons surface preferred contact channels (email, phone, GitHub, LinkedIn), alongside a resume download link.
 
 ## Tech Stack
 - [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
@@ -82,7 +82,8 @@ portfolio/
 ```
 
 ## Customizing Content
-- **Hero CTA & tagline** – Edit copy inside `src/components/sections/Hero.tsx`.
+- **Hero copy** – Edit copy inside `src/components/sections/Hero.tsx`.
+- **Resume download** – Replace `public/Gagan Saini Resume.pdf` and adjust the resume link target in `src/components/Navbar.tsx` or `src/components/sections/Contact.tsx` if the filename changes.
 - **About section** – Update biography text, education, and experience cards in `src/components/sections/About.tsx`.
 - **Skills** – Modify the categorized `dataScienceSkills`, `programmingSkills`, etc. arrays inside `src/components/sections/Skills.tsx` (ensure referenced icons exist in `public/images`).
 - **Certifications** – Add/remove entries in the `CERTIFICATIONS` array inside `src/components/sections/Certifications.tsx` (each item expects a badge image and verification URL).
@@ -99,6 +100,6 @@ This command builds the site and publishes the `dist/` folder to the `gh-pages` 
 
 ## Assets
 - Place profile photos, skill icons, and project images under `public/images/...` to ensure they are copied into the production build.
-- Certification badges live in `public/certifications/` and can be swapped with custom SVGs.
+- Certification badges live in `public/certifications/` and can be swapped with custom PNGs.
 
 Feel free to fork the project and tailor the content, styles, or components to match your personal brand.
