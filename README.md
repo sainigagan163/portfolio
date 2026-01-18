@@ -92,6 +92,18 @@ npm run deploy
 ```
 This command builds the site and publishes the `dist/` folder to the `gh-pages` branch using the `gh-pages` CLI.
 
+## Analytics (visitor insights)
+You can enable Google Analytics 4 to see visits and location data by setting a Vite environment variable.
+
+1. Create a GA4 property and copy the **Measurement ID** (looks like `G-XXXXXXXXXX`).
+2. Create a `.env` file at the project root with:
+   ```
+   VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+   ```
+3. Restart the dev server or rebuild for production.
+
+The app will load GA automatically when the variable is present, and the configuration anonymizes IPs by default.
+
 ## Assets
 - Place profile photos, skill icons, and project images under `public/images/...` to ensure they are copied into the production build.
 - Certification badges live in `public/certifications/` and can be swapped with custom PNGs.
