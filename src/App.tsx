@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
@@ -23,6 +24,7 @@ const App: React.FC = () => {
       <footer className="bg-gray-900/50 py-6 text-center">
         <p className="text-gray-400">© 2025 Gagan Saini. All rights reserved.</p>
       </footer>
+      <Analytics />
     </div>
   );
 };
