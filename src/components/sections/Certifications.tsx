@@ -1,33 +1,25 @@
 import SectionTitle from '../ui/SectionTitle';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
+import { ExternalLink } from 'lucide-react';
 
 type Certification = {
   title: string;
   provider: string;
-  issued?: string;
-  validThrough?: string;
-  summary?: string;
-  highlights?: string[];
+  validThrough: string;
   badge: {
     src: string;
     alt: string;
   };
   verificationUrl: string;
+  highlights: string[];
 };
 
 const CERTIFICATIONS: Certification[] = [
   {
-    title: 'Microsoft Certified: Azure AI Engineer Associate',
+    title: 'Azure AI Engineer Associate',
     provider: 'Microsoft',
-    validThrough: 'Valid through 26 Sep 2026',
-    summary:
-      'Demonstrates applied expertise deploying Azure AI services, orchestrating Azure OpenAI workloads, and designing responsible AI solutions end-to-end.',
-    highlights: [
-      'Azure AI services orchestration',
-      'Azure OpenAI + Cognitive Services',
-      'Azure Machine Learning deployments',
-      'Responsible AI guardrails',
-    ],
+    validThrough: 'Sep 2026',
+    highlights: ['Azure AI services', 'Azure OpenAI', 'Responsible AI'],
     badge: {
       src: `${import.meta.env.BASE_URL}certifications/azure-ai-engineer.png`,
       alt: 'Microsoft Certified Azure AI Engineer Associate badge',
@@ -36,17 +28,10 @@ const CERTIFICATIONS: Certification[] = [
       'https://learn.microsoft.com/en-us/users/gagansaini-2441/credentials/3fc79218913ba045?ref=https%3A%2F%2Fwww.linkedin.com%2F',
   },
   {
-    title: 'Microsoft Certified: Azure Data Scientist Associate',
+    title: 'Azure Data Scientist Associate',
     provider: 'Microsoft',
-    validThrough: 'Valid through 04 Sep 2026',
-    summary:
-      'Validates the ability to train, evaluate, and operationalize machine learning models with Azure Machine Learning and modern MLOps patterns.',
-    highlights: [
-      'End-to-end Azure ML pipelines',
-      'Responsible ML practices',
-      'Feature engineering & experimentation',
-      'Model deployment & monitoring',
-    ],
+    validThrough: 'Sep 2026',
+    highlights: ['Azure ML pipelines', 'Model deployment', 'Feature engineering'],
     badge: {
       src: `${import.meta.env.BASE_URL}certifications/azure-data-scientist.png`,
       alt: 'Microsoft Certified Azure Data Scientist Associate badge',
@@ -55,17 +40,10 @@ const CERTIFICATIONS: Certification[] = [
       'https://learn.microsoft.com/en-us/users/gagansaini-2441/credentials/f70065ef3f358180?ref=https%3A%2F%2Fwww.linkedin.com%2F',
   },
   {
-    title: 'AWS Certified DevOps Engineer – Professional',
+    title: 'AWS DevOps Engineer — Professional',
     provider: 'Amazon Web Services',
-    validThrough: 'Valid through 17 Mar 2027',
-    summary:
-      'Proves advanced proficiency automating AWS workloads with CI/CD, IaC, and observability to maintain resilient, secure cloud platforms.',
-    highlights: [
-      'CI/CD automation & release orchestration',
-      'Infrastructure as Code (CloudFormation, CDK, Terraform)',
-      'Monitoring, logging & incident response',
-      'Security and compliance automation',
-    ],
+    validThrough: 'Mar 2027',
+    highlights: ['CI/CD automation', 'Infrastructure as Code', 'Monitoring & observability'],
     badge: {
       src: `${import.meta.env.BASE_URL}certifications/aws-devops-pro.png`,
       alt: 'AWS Certified DevOps Engineer Professional badge',
@@ -74,17 +52,10 @@ const CERTIFICATIONS: Certification[] = [
       'https://www.credly.com/badges/97b48d60-0400-4303-b8c6-31522efc5ab6/linked_in_profile',
   },
   {
-    title: 'AWS Certified Developer – Associate',
+    title: 'AWS Developer — Associate',
     provider: 'Amazon Web Services',
-    validThrough: 'Valid through 17 Mar 2027',
-    summary:
-      'Recognizes the ability to build secure, scalable AWS applications leveraging serverless, container, and SDK-driven architectures.',
-    highlights: [
-      'Serverless architectures with Lambda & API Gateway',
-      'AWS SDK, CLI, and developer tooling',
-      'Secure application design & IAM',
-      'Performance optimization & caching',
-    ],
+    validThrough: 'Mar 2027',
+    highlights: ['Serverless architectures', 'AWS SDK & tooling', 'Secure app design'],
     badge: {
       src: `${import.meta.env.BASE_URL}certifications/aws-developer-assoc.png`,
       alt: 'AWS Certified Developer Associate badge',
@@ -93,17 +64,10 @@ const CERTIFICATIONS: Certification[] = [
       'https://www.credly.com/badges/029d108e-6898-4435-ae55-d73dd99d40da/linked_in_profile',
   },
   {
-    title: 'AWS Certified Cloud Practitioner',
+    title: 'AWS Cloud Practitioner',
     provider: 'Amazon Web Services',
-    validThrough: 'Valid through 17 Mar 2027',
-    summary:
-      'Builds foundational AWS fluency covering architecture, security, compliance, and cost management for cross-functional stakeholders.',
-    highlights: [
-      'Cloud architectural principles',
-      'Shared responsibility model & governance',
-      'Security & compliance fundamentals',
-      'Cost optimization & billing best practices',
-    ],
+    validThrough: 'Mar 2027',
+    highlights: ['Cloud architecture', 'Security & compliance', 'Cost optimisation'],
     badge: {
       src: `${import.meta.env.BASE_URL}certifications/aws-cloud-practitioner.png`,
       alt: 'AWS Certified Cloud Practitioner badge',
@@ -113,74 +77,53 @@ const CERTIFICATIONS: Certification[] = [
   },
 ];
 
-// Duplicate for seamless infinite scroll
-const marqueeItems = [...CERTIFICATIONS, ...CERTIFICATIONS];
-
 const Certifications = () => {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section id="certifications" className="bg-slate-900/70 py-20 overflow-hidden">
+    <section id="certifications" className="bg-slate-900/70 py-20">
       <div ref={ref} className={`mx-auto max-w-6xl px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <SectionTitle
           title="Certifications"
-          subtitle="Official credentials that reinforce my cloud, data, and AI delivery experience"
+          subtitle="5 active credentials — all independently verifiable"
         />
 
-        {/* Marquee container */}
-        <div className="relative">
-          {/* Fade edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none" />
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          {CERTIFICATIONS.map((cert) => (
+            <a
+              key={cert.title}
+              href={cert.verificationUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="group flex flex-col items-center rounded-2xl border border-emerald-400/20 bg-slate-900/60 p-5 text-center shadow-lg shadow-emerald-900/10 transition-all duration-300 hover:-translate-y-2 hover:border-emerald-300/60 hover:shadow-xl hover:shadow-emerald-900/30"
+              aria-label={`Verify ${cert.title} credential`}
+            >
+              <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-xl bg-slate-950/70 mb-3">
+                <img
+                  src={cert.badge.src}
+                  alt={cert.badge.alt}
+                  loading="lazy"
+                  className="h-full w-full object-contain drop-shadow-[0_12px_18px_rgba(16,185,129,0.35)] transition duration-500 group-hover:scale-110"
+                />
+              </div>
 
-          <div className="flex animate-marquee hover:[animation-play-state:paused]">
-            {marqueeItems.map((certification, index) => (
-              <a
-                key={`${certification.title}-${index}`}
-                href={certification.verificationUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="group flex-shrink-0 w-64 mx-3 flex flex-col items-center justify-between rounded-2xl border border-emerald-400/20 bg-slate-900/60 p-6 text-center shadow-lg shadow-emerald-900/10 transition hover:-translate-y-1 hover:border-emerald-300/60 hover:shadow-xl hover:shadow-emerald-900/30"
-                aria-label={`View ${certification.title} credential`}
-              >
-                <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-xl bg-slate-950/70">
-                  <img
-                    src={certification.badge.src}
-                    alt={certification.badge.alt}
-                    loading="lazy"
-                    className="h-full w-full object-contain drop-shadow-[0_12px_18px_rgba(16,185,129,0.35)] transition duration-500 group-hover:scale-105"
-                  />
-                </div>
+              <span className="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-emerald-200/80">
+                {cert.provider}
+              </span>
+              <h3 className="text-sm font-semibold text-white mt-1 mb-1">
+                {cert.title}
+              </h3>
+              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-emerald-200/60 mb-3">
+                Valid through {cert.validThrough}
+              </p>
 
-                <div className="mt-4 flex flex-col items-center gap-1">
-                  <span className="text-xs font-semibold uppercase tracking-[0.25em] text-emerald-200/80">
-                    {certification.provider}
-                  </span>
-                  <h3 className="text-sm font-semibold text-white">
-                    {certification.title}
-                  </h3>
-                  {(certification.issued || certification.validThrough) && (
-                    <p className="text-[0.65rem] font-semibold uppercase tracking-[0.32em] text-emerald-200/70">
-                      {[certification.issued, certification.validThrough].filter(Boolean).join(' · ')}
-                    </p>
-                  )}
-                </div>
-
-                {(certification.summary || certification.highlights?.length) && (
-                  <div className="sr-only">
-                    {certification.summary && <p>{certification.summary}</p>}
-                    {certification.highlights && certification.highlights.length > 0 && (
-                      <ul>
-                        {certification.highlights.map((highlight) => (
-                          <li key={highlight}>{highlight}</li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                )}
-              </a>
-            ))}
-          </div>
+              {/* Verification link — visible text for crawlers */}
+              <span className="flex items-center gap-1 text-xs text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity mt-auto">
+                <ExternalLink className="w-3 h-3" />
+                Verify credential
+              </span>
+            </a>
+          ))}
         </div>
       </div>
     </section>

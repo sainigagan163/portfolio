@@ -3,11 +3,12 @@ import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
+import ImpactResults from './components/sections/ImpactResults';
+import CaseStudy from './components/sections/CaseStudy';
 import Experience from './components/sections/Experience';
-import ExperienceHighlights from './components/sections/ExperienceHighlights';
 import Skills from './components/sections/Skills';
 import Certifications from './components/sections/Certifications';
-
+import Writing from './components/sections/Writing';
 import Contact from './components/sections/Contact';
 import Footer from './components/sections/Footer';
 
@@ -18,10 +19,12 @@ const App: React.FC = () => {
       <Navbar />
       <Hero />
       <About />
+      <ImpactResults />
+      <CaseStudy />
       <Experience />
-      <ExperienceHighlights />
       <Skills />
       <Certifications />
+      <Writing />
       <Contact />
       <Footer />
       <Analytics />

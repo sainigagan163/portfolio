@@ -5,16 +5,16 @@ import { useScrollReveal } from '../../hooks/useScrollReveal';
 
 const experiences = [
   {
-    role: 'DevOps Engineer I',
+    role: 'DevOps Engineer I (Data Science & ML Focus)',
     company: 'CloudEQ Software India Pvt. Ltd.',
     period: '07/2022 – 12/2024',
     highlights: [
-      'Built ML-driven FinOps solutions using Python, Scikit-learn, and TensorFlow to optimize cloud resource usage across AWS, Azure, and GCP.',
-      'Developed scalable ETL pipelines to process high-volume multi-cloud usage and performance data, enabling data-driven cost and efficiency insights.',
-      'Applied unsupervised learning (DBSCAN, clustering) to identify infrastructure inefficiencies, under-utilized resources, and performance anomalies.',
-      'Automated cloud infrastructure and CI/CD workflows using Terraform, GitHub Actions, Jenkins, and Azure DevOps, improving deployment reliability.',
-      'Created Python automation tools for VM monitoring, disk health analysis, snapshot lifecycle management, and cluster optimization.',
-      'Delivered stakeholder-ready dashboards and analytical reports, translating complex technical data into actionable business recommendations.',
+      'Built ML-driven FinOps solutions using Python, Scikit-learn, and TensorFlow — achieving 18% cost efficiency gain across multi-cloud environments.',
+      'Developed scalable ETL pipelines to process high-volume usage data from AWS, Azure, and GCP into unified analytics schemas.',
+      'Applied unsupervised learning (DBSCAN, density-based clustering) to detect spending anomalies, under-utilised resources, and infrastructure inefficiencies.',
+      'Created Python automation tools for VM monitoring, disk health analysis, snapshot lifecycle management, and cluster right-sizing.',
+      'Delivered stakeholder-ready dashboards and analytical reports, translating complex technical data into executive-level business recommendations.',
+      'Automated CI/CD workflows using Terraform, GitHub Actions, Jenkins, and Azure DevOps, improving deployment reliability across teams.',
     ],
   },
 ];
@@ -27,19 +27,15 @@ const Experience: React.FC = () => {
       <div ref={ref} className={`max-w-6xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <SectionTitle
           title="Experience"
-          subtitle="Professional roles focused on cloud automation, MLOps, and analytics delivery"
+          subtitle="2.5 years shipping ML models and data pipelines in production"
         />
 
         <div className="relative">
-          {/* Timeline line */}
           <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-400 via-emerald-400/50 to-transparent" />
 
           {experiences.map((exp, index) => (
             <div key={index} className="relative pl-8 md:pl-20 pb-8">
-              {/* Timeline dot */}
               <div className="absolute left-0 md:left-8 top-1 -translate-x-1/2 w-4 h-4 rounded-full bg-emerald-400 border-4 border-slate-950 shadow-lg shadow-emerald-400/30" />
-
-              {/* Timeline connector glow */}
               <div className="absolute left-0 md:left-8 top-1 -translate-x-1/2 w-4 h-4 rounded-full bg-emerald-400/20 animate-ping" />
 
               <div className="rounded-2xl border border-emerald-400/20 bg-slate-900/60 p-6 shadow-lg shadow-emerald-500/10 backdrop-blur-sm hover:border-emerald-400/40 transition-colors">

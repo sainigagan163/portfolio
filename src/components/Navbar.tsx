@@ -15,10 +15,12 @@ const Navbar = () => {
 
   const navLinks = [
     { href: '#about', label: 'About' },
+    { href: '#impact', label: 'Results' },
+    { href: '#case-study', label: 'Case Study' },
     { href: '#experience', label: 'Experience' },
-    { href: '#achievements', label: 'Key Achievements' },
     { href: '#skills', label: 'Skills' },
     { href: '#certifications', label: 'Certifications' },
+    { href: '#writing', label: 'Writing' },
     { href: '#contact', label: 'Contact' },
   ];
   const resumeHref = `${import.meta.env.BASE_URL}Gagan%20Saini%20Resume.pdf`;
@@ -40,7 +42,6 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navLinks.map(({ href, label }) => (
@@ -63,7 +64,6 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile Navigation Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -74,7 +74,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation Menu */}
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">

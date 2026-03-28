@@ -10,21 +10,18 @@ const About: React.FC = () => {
       <div ref={ref} className={`max-w-4xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <SectionTitle
           title="About Me"
-          subtitle="Data science, MLOps, and analytics expertise anchored in business outcomes"
+          subtitle="Data scientist who ships ML models that drive real business outcomes"
         />
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* LEFT CONTENT */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-emerald-200">
-              Professional Summary
-            </h3>
-
-            <p className="text-gray-300">
-              I am a postgraduate Data Science student at the University of Aberdeen with hands-on experience delivering
-              machine learning solutions, data automation, and cloud-based analytics. My work spans predictive modeling,
-              MLOps, and scalable pipelines that connect technical delivery to measurable business outcomes. I partner
-              with cross-functional teams to translate complex data into clear, decision-ready insights.
+            <p className="text-gray-300 leading-relaxed">
+              I'm a postgraduate Data Science student at the University of Aberdeen with 2.5 years
+              of hands-on experience shipping machine learning solutions in production. At CloudEQ,
+              I built ML anomaly detection models that cut cloud costs by 18% across AWS, Azure, and
+              GCP. My work spans predictive modelling, ETL pipeline architecture, and translating
+              complex data into executive-level insights that drive business decisions.
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2">
@@ -33,9 +30,9 @@ const About: React.FC = () => {
                   What I deliver
                 </p>
                 <ul className="mt-3 space-y-2 text-sm text-gray-300">
-                  <li>Production-ready ML workflows and deployment pipelines</li>
-                  <li>Data quality automation, monitoring, and alerting</li>
-                  <li>Analytics storytelling for leadership alignment</li>
+                  <li>ML models that ship to production and save money</li>
+                  <li>Predictive analytics with measurable business impact</li>
+                  <li>Stakeholder dashboards that drive decisions</li>
                 </ul>
               </div>
 
@@ -44,9 +41,9 @@ const About: React.FC = () => {
                   Core focus
                 </p>
                 <ul className="mt-3 space-y-2 text-sm text-gray-300">
-                  <li>Predictive analytics and anomaly detection</li>
-                  <li>Cloud-native data platforms on AWS and Azure</li>
-                  <li>Responsible AI, security, and model governance</li>
+                  <li>Anomaly detection and cost optimisation</li>
+                  <li>Multi-cloud data platforms (AWS, Azure, GCP)</li>
+                  <li>Responsible AI and model governance</li>
                 </ul>
               </div>
             </div>
@@ -57,33 +54,16 @@ const About: React.FC = () => {
             </h3>
 
             <div className="space-y-6">
-              {/* MSc */}
               <div>
-                <p className="text-lg font-semibold text-gray-100">
-                  MSc Data Science
-                </p>
-                <p className="text-gray-300">
-                  University of Aberdeen, UK
-                </p>
-                <p className="text-sm text-gray-400">
-                  Jan 2025 – Present
-                </p>
+                <p className="text-lg font-semibold text-gray-100">MSc Data Science</p>
+                <p className="text-gray-300">University of Aberdeen, UK</p>
+                <p className="text-sm text-gray-400">Jan 2025 – Present</p>
               </div>
-
-              {/* B.Tech */}
               <div>
-                <p className="text-lg font-semibold text-gray-100">
-                  B.Tech Civil Engineering
-                </p>
-                <p className="text-gray-300">
-                  Ajay Kumar Garg Engineering College, India
-                </p>
-                <p className="text-gray-300">
-                  Dr. A.P.J. Abdul Kalam Technical University
-                </p>
-                <p className="text-sm text-gray-400">
-                  2017 – 2021
-                </p>
+                <p className="text-lg font-semibold text-gray-100">B.Tech Civil Engineering</p>
+                <p className="text-gray-300">Ajay Kumar Garg Engineering College, India</p>
+                <p className="text-gray-300">Dr. A.P.J. Abdul Kalam Technical University</p>
+                <p className="text-sm text-gray-400">2017 – 2021</p>
               </div>
             </div>
           </div>
@@ -93,7 +73,7 @@ const About: React.FC = () => {
             <div className="w-64 h-64 md:w-80 md:h-80 aspect-square rounded-full overflow-hidden border-4 border-emerald-400 shadow-xl shadow-emerald-500/20">
               <img
                 src="/images/Profile.jpg"
-                alt="Gagan Saini Profile"
+                alt="Gagan Saini — Data Scientist based in Aberdeen, UK"
                 className="w-full h-full object-cover"
               />
             </div>
