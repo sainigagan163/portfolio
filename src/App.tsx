@@ -7,7 +7,9 @@ import Experience from './components/sections/Experience';
 import ExperienceHighlights from './components/sections/ExperienceHighlights';
 import Skills from './components/sections/Skills';
 import Certifications from './components/sections/Certifications';
+import Projects from './components/sections/Projects';
 import Contact from './components/sections/Contact';
+import Footer from './components/sections/Footer';
 
 const App: React.FC = () => {
   return (
@@ -20,10 +22,9 @@ const App: React.FC = () => {
       <ExperienceHighlights />
       <Skills />
       <Certifications />
+      <Projects />
       <Contact />
-      <footer className="bg-gray-900/50 py-6 text-center">
-        <p className="text-gray-400">© 2025 Gagan Saini. All rights reserved.</p>
-      </footer>
+      <Footer />
       <Analytics />
     </div>
   );
