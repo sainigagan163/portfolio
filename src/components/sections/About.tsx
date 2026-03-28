@@ -1,10 +1,13 @@
 import React from 'react';
 import SectionTitle from '../ui/SectionTitle';
+import { useScrollReveal } from '../../hooks/useScrollReveal';
 
 const About: React.FC = () => {
+  const { ref, isVisible } = useScrollReveal();
+
   return (
     <section id="about" className="py-20">
-      <div className="max-w-4xl mx-auto px-4">
+      <div ref={ref} className={`max-w-4xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <SectionTitle
           title="About Me"
           subtitle="Data science, MLOps, and analytics expertise anchored in business outcomes"
@@ -87,7 +90,7 @@ const About: React.FC = () => {
 
           {/* RIGHT IMAGE */}
           <div className="relative md:sticky md:top-20 flex justify-center pt-8 md:pt-0">
-            <div className="w-64 h-64 md:w-80 md:h-80 aspect-square rounded-full overflow-hidden border-4 border-emerald-400 shadow-xl">
+            <div className="w-64 h-64 md:w-80 md:h-80 aspect-square rounded-full overflow-hidden border-4 border-emerald-400 shadow-xl shadow-emerald-500/20">
               <img
                 src="/images/Profile.jpg"
                 alt="Gagan Saini Profile"

@@ -1,4 +1,5 @@
 import SectionTitle from '../ui/SectionTitle';
+import { useScrollReveal } from '../../hooks/useScrollReveal';
 
 type Certification = {
   title: string;
@@ -112,62 +113,74 @@ const CERTIFICATIONS: Certification[] = [
   },
 ];
 
+// Duplicate for seamless infinite scroll
+const marqueeItems = [...CERTIFICATIONS, ...CERTIFICATIONS];
+
 const Certifications = () => {
+  const { ref, isVisible } = useScrollReveal();
+
   return (
-    <section id="certifications" className="bg-slate-900/70 py-20">
-      <div className="mx-auto max-w-6xl px-4">
+    <section id="certifications" className="bg-slate-900/70 py-20 overflow-hidden">
+      <div ref={ref} className={`mx-auto max-w-6xl px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <SectionTitle
           title="Certifications"
           subtitle="Official credentials that reinforce my cloud, data, and AI delivery experience"
         />
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {CERTIFICATIONS.map((certification) => (
-            <a
-              key={certification.title}
-              href={certification.verificationUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="group flex flex-col items-center justify-between rounded-2xl border border-emerald-400/20 bg-slate-900/60 p-6 text-center shadow-lg shadow-emerald-900/10 transition hover:-translate-y-1 hover:border-emerald-300/60 hover:shadow-xl hover:shadow-emerald-900/30"
-              aria-label={`View ${certification.title} credential`}
-            >
-              <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-xl bg-slate-950/70">
-                <img
-                  src={certification.badge.src}
-                  alt={certification.badge.alt}
-                  loading="lazy"
-                  className="h-full w-full object-contain drop-shadow-[0_12px_18px_rgba(16,185,129,0.35)] transition duration-500 group-hover:scale-105"
-                />
-              </div>
+        {/* Marquee container */}
+        <div className="relative">
+          {/* Fade edges */}
+          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none" />
 
-              <div className="mt-4 flex flex-col items-center gap-1">
-                <span className="text-xs font-semibold uppercase tracking-[0.25em] text-emerald-200/80">
-                  {certification.provider}
-                </span>
-                <h3 className="text-sm font-semibold text-white sm:text-base">
-                  {certification.title}
-                </h3>
-                {(certification.issued || certification.validThrough) && (
-                  <p className="text-[0.65rem] font-semibold uppercase tracking-[0.32em] text-emerald-200/70">
-                    {[certification.issued, certification.validThrough].filter(Boolean).join(' · ')}
-                  </p>
-                )}
-              </div>
+          <div className="flex animate-marquee hover:[animation-play-state:paused]">
+            {marqueeItems.map((certification, index) => (
+              <a
+                key={`${certification.title}-${index}`}
+                href={certification.verificationUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex-shrink-0 w-64 mx-3 flex flex-col items-center justify-between rounded-2xl border border-emerald-400/20 bg-slate-900/60 p-6 text-center shadow-lg shadow-emerald-900/10 transition hover:-translate-y-1 hover:border-emerald-300/60 hover:shadow-xl hover:shadow-emerald-900/30"
+                aria-label={`View ${certification.title} credential`}
+              >
+                <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-xl bg-slate-950/70">
+                  <img
+                    src={certification.badge.src}
+                    alt={certification.badge.alt}
+                    loading="lazy"
+                    className="h-full w-full object-contain drop-shadow-[0_12px_18px_rgba(16,185,129,0.35)] transition duration-500 group-hover:scale-105"
+                  />
+                </div>
 
-              {(certification.summary || certification.highlights?.length) && (
-                <div className="sr-only">
-                  {certification.summary && <p>{certification.summary}</p>}
-                  {certification.highlights && certification.highlights.length > 0 && (
-                    <ul>
-                      {certification.highlights.map((highlight) => (
-                        <li key={highlight}>{highlight}</li>
-                      ))}
-                    </ul>
+                <div className="mt-4 flex flex-col items-center gap-1">
+                  <span className="text-xs font-semibold uppercase tracking-[0.25em] text-emerald-200/80">
+                    {certification.provider}
+                  </span>
+                  <h3 className="text-sm font-semibold text-white">
+                    {certification.title}
+                  </h3>
+                  {(certification.issued || certification.validThrough) && (
+                    <p className="text-[0.65rem] font-semibold uppercase tracking-[0.32em] text-emerald-200/70">
+                      {[certification.issued, certification.validThrough].filter(Boolean).join(' · ')}
+                    </p>
                   )}
                 </div>
-              )}
-            </a>
-          ))}
+
+                {(certification.summary || certification.highlights?.length) && (
+                  <div className="sr-only">
+                    {certification.summary && <p>{certification.summary}</p>}
+                    {certification.highlights && certification.highlights.length > 0 && (
+                      <ul>
+                        {certification.highlights.map((highlight) => (
+                          <li key={highlight}>{highlight}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                )}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
