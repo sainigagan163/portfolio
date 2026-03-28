@@ -11,7 +11,6 @@ const Footer = () => {
     { href: '#experience', label: 'Experience' },
     { href: '#skills', label: 'Skills' },
     { href: '#certifications', label: 'Certifications' },
-    { href: '#projects', label: 'Projects' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -28,7 +27,7 @@ const Footer = () => {
               Gagan Saini
             </a>
             <p className="text-gray-400 text-sm mt-2">
-              Data Scientist &amp; MLOps Engineer building scalable, cloud-native data solutions.
+              Data Scientist specializing in machine learning, predictive analytics, and AI-driven insights.
             </p>
           </div>
 

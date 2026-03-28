@@ -7,7 +7,7 @@ import Experience from './components/sections/Experience';
 import ExperienceHighlights from './components/sections/ExperienceHighlights';
 import Skills from './components/sections/Skills';
 import Certifications from './components/sections/Certifications';
-import Projects from './components/sections/Projects';
+
 import Contact from './components/sections/Contact';
 import Footer from './components/sections/Footer';
 
@@ -22,7 +22,6 @@ const App: React.FC = () => {
       <ExperienceHighlights />
       <Skills />
       <Certifications />
-      <Projects />
       <Contact />
       <Footer />
       <Analytics />
