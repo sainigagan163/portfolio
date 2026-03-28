@@ -26,8 +26,8 @@ const Hero = () => {
         <TypewriterEffect />
 
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          Building scalable ML pipelines, cloud-native analytics, and data solutions
-          that drive real business outcomes.
+          Transforming complex data into actionable insights through machine learning,
+          predictive analytics, and cloud-native data science solutions.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-gray-300">
@@ -44,10 +44,10 @@ const Hero = () => {
             Get in Touch
           </a>
           <a
-            href="#projects"
+            href="#skills"
             className="px-8 py-3 border border-emerald-400/40 hover:border-emerald-400 text-emerald-300 rounded-full font-semibold transition-all hover:bg-emerald-400/10"
           >
-            View Projects
+            View Skills
           </a>
         </div>
 

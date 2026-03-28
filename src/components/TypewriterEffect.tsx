@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 const TypewriterEffect = () => {
   const roles = [
-    "Postgraduate Data Science Student",
-    "Data Science & AI Enthusiast",
-    "Machine Learning Developer",
-    "Data Engineering Enthusiast"
+    "Data Scientist",
+    "Machine Learning Engineer",
+    "Predictive Analytics Specialist",
+    "AI & Deep Learning Enthusiast"
   ];
   
   const [currentRole, setCurrentRole] = useState(0);
