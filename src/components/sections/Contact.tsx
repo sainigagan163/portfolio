@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
           </a>
           <div className="flex items-center gap-3 rounded-lg border border-slate-800 p-4 text-sm text-slate-400 sm:col-span-2">
             <MapPin className="w-5 h-5 text-teal-500 shrink-0" />
-            Aberdeen, UK — Open to relocation
+            United Kingdom — Open to relocation
           </div>
         </div>
       </div>

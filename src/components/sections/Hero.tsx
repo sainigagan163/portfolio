@@ -1,13 +1,16 @@
 import React from 'react';
+import ParticleBackground from '../ParticleBackground';
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const Hero = () => {
   const resumeHref = `${import.meta.env.BASE_URL}Gagan%20Saini%20Resume.pdf`;
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <ParticleBackground />
+
       <div className="relative z-10 flex flex-col items-center text-center space-y-6 max-w-3xl mx-auto px-4">
-        <p className="text-sm font-medium text-teal-400 tracking-wide">Aberdeen, UK — Open to relocation</p>
+        <p className="text-sm font-medium text-teal-400 tracking-wide">United Kingdom — Open to relocation</p>
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
           Gagan Saini
@@ -47,39 +50,19 @@ const Hero = () => {
         </div>
 
         <div className="flex items-center gap-6 pt-4">
-          <a
-            href="https://github.com/sainigagan163"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-slate-500 hover:text-white transition-colors text-sm"
-          >
-            <Github className="w-5 h-5" />
-            <span>GitHub</span>
+          <a href="https://github.com/sainigagan163" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-500 hover:text-white transition-colors text-sm">
+            <Github className="w-5 h-5" /><span>GitHub</span>
           </a>
-          <a
-            href="https://linkedin.com/in/gagansaini29"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-slate-500 hover:text-white transition-colors text-sm"
-          >
-            <Linkedin className="w-5 h-5" />
-            <span>LinkedIn</span>
+          <a href="https://linkedin.com/in/gagansaini29" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-500 hover:text-white transition-colors text-sm">
+            <Linkedin className="w-5 h-5" /><span>LinkedIn</span>
           </a>
-          <a
-            href="mailto:sainigagan163@gmail.com"
-            className="flex items-center gap-2 text-slate-500 hover:text-white transition-colors text-sm"
-          >
-            <Mail className="w-5 h-5" />
-            <span>Email</span>
+          <a href="mailto:sainigagan163@gmail.com" className="flex items-center gap-2 text-slate-500 hover:text-white transition-colors text-sm">
+            <Mail className="w-5 h-5" /><span>Email</span>
           </a>
         </div>
       </div>
 
-      <a
-        href="#about"
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-slate-600 hover:text-slate-400 transition-colors"
-        aria-label="Scroll to about section"
-      >
+      <a href="#about" className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-slate-600 hover:text-slate-400 transition-colors" aria-label="Scroll to about section">
         <ArrowDown className="w-5 h-5 animate-bounce" />
       </a>
     </section>
