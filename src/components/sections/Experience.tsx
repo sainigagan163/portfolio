@@ -1,74 +1,59 @@
 import React from 'react';
-import SectionTitle from '../ui/SectionTitle';
-import { Briefcase } from 'lucide-react';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
-
-const experiences = [
-  {
-    role: 'DevOps Engineer I',
-    company: 'CloudEQ Software India Pvt. Ltd.',
-    period: '07/2022 – 12/2024',
-    highlights: [
-      'Built ML-driven FinOps solutions using Python, Scikit-learn, and TensorFlow to optimize cloud resource usage across AWS, Azure, and GCP.',
-      'Developed scalable ETL pipelines to process high-volume multi-cloud usage and performance data, enabling data-driven cost and efficiency insights.',
-      'Applied unsupervised learning (DBSCAN, clustering) to identify infrastructure inefficiencies, under-utilized resources, and performance anomalies.',
-      'Automated cloud infrastructure and CI/CD workflows using Terraform, GitHub Actions, Jenkins, and Azure DevOps, improving deployment reliability.',
-      'Created Python automation tools for VM monitoring, disk health analysis, snapshot lifecycle management, and cluster optimization.',
-      'Delivered stakeholder-ready dashboards and analytical reports, translating complex technical data into actionable business recommendations.',
-    ],
-  },
-];
 
 const Experience: React.FC = () => {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section id="experience" className="py-20">
-      <div ref={ref} className={`max-w-6xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <SectionTitle
-          title="Experience"
-          subtitle="Professional roles focused on cloud automation, MLOps, and analytics delivery"
-        />
+    <section id="experience" className="py-24">
+      <div ref={ref} className={`max-w-3xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <h2 className="text-2xl font-bold mb-8 text-white">Experience</h2>
 
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-400 via-emerald-400/50 to-transparent" />
-
-          {experiences.map((exp, index) => (
-            <div key={index} className="relative pl-8 md:pl-20 pb-8">
-              {/* Timeline dot */}
-              <div className="absolute left-0 md:left-8 top-1 -translate-x-1/2 w-4 h-4 rounded-full bg-emerald-400 border-4 border-slate-950 shadow-lg shadow-emerald-400/30" />
-
-              {/* Timeline connector glow */}
-              <div className="absolute left-0 md:left-8 top-1 -translate-x-1/2 w-4 h-4 rounded-full bg-emerald-400/20 animate-ping" />
-
-              <div className="rounded-2xl border border-emerald-400/20 bg-slate-900/60 p-6 shadow-lg shadow-emerald-500/10 backdrop-blur-sm hover:border-emerald-400/40 transition-colors">
-                <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-4">
-                  <div className="flex items-center gap-3 text-emerald-200">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-400/10">
-                      <Briefcase className="h-5 w-5 text-emerald-400" />
-                    </div>
-                    <div>
-                      <p className="text-lg font-semibold text-white">{exp.role}</p>
-                      <p className="text-sm text-gray-400">{exp.company}</p>
-                    </div>
-                  </div>
-                  <span className="sm:ml-auto text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/70 bg-emerald-400/10 px-3 py-1 rounded-full w-fit">
-                    {exp.period}
-                  </span>
-                </div>
-
-                <ul className="space-y-3 text-sm text-gray-300">
-                  {exp.highlights.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-400 shrink-0" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+        <div className="space-y-10">
+          {/* CloudEQ */}
+          <div className="border-l-2 border-teal-500/40 pl-6">
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-4">
+              <div>
+                <h3 className="text-lg font-semibold text-white">Data Engineer / DevOps Engineer</h3>
+                <p className="text-sm text-slate-400">CloudEQ Software India Pvt. Ltd.</p>
               </div>
+              <span className="text-xs font-medium text-slate-500 shrink-0">Jul 2022 – Dec 2024</span>
             </div>
-          ))}
+            <ul className="space-y-3 text-sm text-slate-400 leading-relaxed">
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
+                <span>Engineered ML-powered cloud cost optimisation pipelines, <strong className="text-slate-300">reducing infrastructure spend by 35%</strong> across multi-cloud environments (AWS, Azure, GCP)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
+                <span>Designed and deployed automated ETL workflows processing <strong className="text-slate-300">50K+ daily records with 99.7% data integrity</strong></span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
+                <span>Built CI/CD pipelines using Jenkins, Docker, and Terraform, <strong className="text-slate-300">cutting deployment time by 40%</strong></span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
+                <span>Developed real-time monitoring dashboards integrating CloudWatch, Azure Monitor, and GCP Operations Suite, <strong className="text-slate-300">improving incident response time by 30%</strong></span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
+                <span>Implemented infrastructure-as-code practices across <strong className="text-slate-300">15+ client environments</strong>, reducing provisioning errors by 45%</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Currys */}
+          <div className="border-l-2 border-slate-800 pl-6">
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+              <div>
+                <h3 className="text-lg font-semibold text-white">Sales Colleague</h3>
+                <p className="text-sm text-slate-400">Currys</p>
+              </div>
+              <span className="text-xs font-medium text-slate-500 shrink-0">Current — Aberdeen, UK</span>
+            </div>
+            <p className="text-sm text-slate-400">Customer-facing role while completing MSc in Data Science.</p>
+          </div>
         </div>
       </div>
     </section>

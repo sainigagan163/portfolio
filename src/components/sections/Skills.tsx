@@ -1,89 +1,42 @@
-import React, { useState } from 'react';
-import SectionTitle from '../ui/SectionTitle';
-import SkillGrid from '../SkillGrid';
+import React from 'react';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 
-const tabs = [
-  {
-    id: 'ds',
-    label: 'Data Science & ML',
-    skills: [
-      { name: 'Machine Learning', icon: 'images/machine-learning-icon.png' },
-      { name: 'Predictive Analytics', icon: 'images/rag-icon.svg' },
-      { name: 'Statistical Modelling', icon: 'images/fastapi-icon.svg' },
-      { name: 'TensorFlow', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' },
-      { name: 'Scikit-learn', icon: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg' },
-      { name: 'LLM & AI Integration', icon: 'images/openai-icon.svg' },
-    ],
-  },
-  {
-    id: 'prog',
-    label: 'Programming & DE',
-    skills: [
-      { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-      { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg' },
-      { name: 'Data Engineering', icon: 'images/dvc-icon.svg' },
-      { name: 'ETL Pipelines', icon: 'images/mlflow-icon.svg' },
-      { name: 'FastAPI', icon: 'images/fastapi-icon.svg' },
-    ],
-  },
-  {
-    id: 'viz',
-    label: 'Visualization & BI',
-    skills: [
-      { name: 'Power BI', icon: 'images/power-bi.png' },
-      { name: 'Tableau', icon: 'images/Tableau-Logo.png' },
-      { name: 'SAS', icon: 'images/pinecone-icon.svg' },
-      { name: 'Data Visualization', icon: 'images/langchain-icon.svg' },
-    ],
-  },
-  {
-    id: 'cloud',
-    label: 'Cloud & DevOps',
-    skills: [
-      { name: 'AWS', icon: 'images/aws-icon.svg' },
-      { name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' },
-      { name: 'GCP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg' },
-      { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-      { name: 'FinOps', icon: 'images/finops.png' },
-      { name: 'Automation', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg' },
-      { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-    ],
-  },
+const skillGroups = [
+  { category: 'Languages', skills: ['Python', 'SQL', 'Bash'] },
+  { category: 'ML / Data Science', skills: ['Scikit-learn', 'XGBoost', 'Pandas', 'NumPy', 'TensorFlow', 'NLP'] },
+  { category: 'Cloud Platforms', skills: ['AWS (EC2, S3, Lambda, SageMaker, CloudWatch)', 'Azure (ML Studio, Data Factory, Monitor)', 'GCP (BigQuery, Dataflow, Operations Suite)'] },
+  { category: 'Data Engineering', skills: ['ETL/ELT Pipelines', 'Apache Airflow', 'Data Warehousing', 'Data Modelling'] },
+  { category: 'DevOps / MLOps', skills: ['Docker', 'Kubernetes', 'Terraform', 'Jenkins', 'CI/CD', 'GitHub Actions'] },
+  { category: 'Databases', skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'] },
+  { category: 'Tools', skills: ['Git', 'Jupyter', 'VS Code', 'Linux'] },
 ];
 
 const Skills = () => {
-  const [activeTab, setActiveTab] = useState('ds');
   const { ref, isVisible } = useScrollReveal();
-  const activeSkills = tabs.find((t) => t.id === activeTab);
 
   return (
-    <section id="skills" className="py-20 bg-slate-950/40 backdrop-blur-sm">
-      <div ref={ref} className={`max-w-4xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <SectionTitle title="Skills & Technologies" subtitle="A Comprehensive Technical Stack" />
+    <section id="skills" className="py-24">
+      <div ref={ref} className={`max-w-3xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <h2 className="text-2xl font-bold mb-8 text-white">Skills & Technologies</h2>
 
-        {/* Tab navigation */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
-                activeTab === tab.id
-                  ? 'bg-emerald-400 text-slate-900 shadow-lg shadow-emerald-500/25'
-                  : 'border border-emerald-400/20 text-gray-300 hover:border-emerald-400/50 hover:text-white bg-slate-900/60'
-              }`}
-            >
-              {tab.label}
-            </button>
+        <div className="space-y-6">
+          {skillGroups.map((group) => (
+            <div key={group.category}>
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-teal-400 mb-3">
+                {group.category}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {group.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1.5 text-sm text-slate-300 bg-slate-900/60 border border-slate-800 rounded-lg"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           ))}
-        </div>
-
-        {/* Active skill grid with fade animation */}
-        <div key={activeTab} className="animate-fadeIn">
-          {activeSkills && (
-            <SkillGrid title={activeSkills.label} skills={activeSkills.skills} />
-          )}
         </div>
       </div>
     </section>

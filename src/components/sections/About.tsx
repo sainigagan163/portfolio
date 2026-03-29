@@ -1,102 +1,51 @@
 import React from 'react';
-import SectionTitle from '../ui/SectionTitle';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
 
 const About: React.FC = () => {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section id="about" className="py-20">
-      <div ref={ref} className={`max-w-4xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <SectionTitle
-          title="About Me"
-          subtitle="Data science, MLOps, and analytics expertise anchored in business outcomes"
-        />
+    <section id="about" className="py-24">
+      <div ref={ref} className={`max-w-3xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <h2 className="text-2xl font-bold mb-6 text-white">About</h2>
 
-        <div className="grid md:grid-cols-2 gap-8 items-start">
-          {/* LEFT CONTENT */}
-          <div className="space-y-6">
-            <h3 className="text-2xl font-semibold text-emerald-200">
-              Professional Summary
-            </h3>
+        <div className="space-y-4 text-slate-400 leading-relaxed">
+          <p>
+            MSc Data Science candidate at the University of Aberdeen (expected June 2026) with
+            2+ years of professional experience building ML-powered cloud optimisation pipelines
+            at CloudEQ Software. I specialise in fraud detection, ETL architecture, and applied
+            machine learning across AWS, Azure, and GCP.
+          </p>
+          <p>
+            I made a self-driven career pivot from Civil Engineering into data science — motivated
+            by a genuine interest in using data to solve complex problems at scale. My work
+            focuses on shipping ML systems that deliver measurable business outcomes, not just
+            proof-of-concept notebooks.
+          </p>
+        </div>
 
-            <p className="text-gray-300">
-              I am a postgraduate Data Science student at the University of Aberdeen with hands-on experience delivering
-              machine learning solutions, data automation, and cloud-based analytics. My work spans predictive modeling,
-              MLOps, and scalable pipelines that connect technical delivery to measurable business outcomes. I partner
-              with cross-functional teams to translate complex data into clear, decision-ready insights.
-            </p>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-xl border border-emerald-400/20 bg-slate-900/60 p-4">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200/80">
-                  What I deliver
-                </p>
-                <ul className="mt-3 space-y-2 text-sm text-gray-300">
-                  <li>Production-ready ML workflows and deployment pipelines</li>
-                  <li>Data quality automation, monitoring, and alerting</li>
-                  <li>Analytics storytelling for leadership alignment</li>
-                </ul>
-              </div>
-
-              <div className="rounded-xl border border-emerald-400/20 bg-slate-900/60 p-4">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200/80">
-                  Core focus
-                </p>
-                <ul className="mt-3 space-y-2 text-sm text-gray-300">
-                  <li>Predictive analytics and anomaly detection</li>
-                  <li>Cloud-native data platforms on AWS and Azure</li>
-                  <li>Responsible AI, security, and model governance</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* EDUCATION */}
-            <h3 className="text-2xl font-semibold text-emerald-200 pt-4">
-              Education
-            </h3>
-
-            <div className="space-y-6">
-              {/* MSc */}
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-lg border border-slate-800 p-5">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-teal-400 mb-3">Education</h3>
+            <div className="space-y-3">
               <div>
-                <p className="text-lg font-semibold text-gray-100">
-                  MSc Data Science
-                </p>
-                <p className="text-gray-300">
-                  University of Aberdeen, UK
-                </p>
-                <p className="text-sm text-gray-400">
-                  Jan 2025 – Present
-                </p>
+                <p className="font-medium text-white text-sm">MSc Data Science</p>
+                <p className="text-sm text-slate-500">University of Aberdeen, UK — Expected June 2026</p>
               </div>
-
-              {/* B.Tech */}
               <div>
-                <p className="text-lg font-semibold text-gray-100">
-                  B.Tech Civil Engineering
-                </p>
-                <p className="text-gray-300">
-                  Ajay Kumar Garg Engineering College, India
-                </p>
-                <p className="text-gray-300">
-                  Dr. A.P.J. Abdul Kalam Technical University
-                </p>
-                <p className="text-sm text-gray-400">
-                  2017 – 2021
-                </p>
+                <p className="font-medium text-white text-sm">B.Tech Civil Engineering</p>
+                <p className="text-sm text-slate-500">AKGEC, AKTU, India — 2017–2021</p>
               </div>
             </div>
           </div>
-
-          {/* RIGHT IMAGE */}
-          <div className="relative md:sticky md:top-20 flex justify-center pt-8 md:pt-0">
-            <div className="w-64 h-64 md:w-80 md:h-80 aspect-square rounded-full overflow-hidden border-4 border-emerald-400 shadow-xl shadow-emerald-500/20">
-              <img
-                src="/images/Profile.jpg"
-                alt="Gagan Saini Profile"
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <div className="rounded-lg border border-slate-800 p-5">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-teal-400 mb-3">Quick Facts</h3>
+            <ul className="space-y-2 text-sm text-slate-400">
+              <li>5x AWS / Azure certified</li>
+              <li>2+ years production ML experience</li>
+              <li>35% cloud cost reduction delivered</li>
+              <li>50K+ daily records processed at 99.7% integrity</li>
+            </ul>
           </div>
         </div>
       </div>

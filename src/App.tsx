@@ -4,24 +4,22 @@ import Navbar from './components/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Experience from './components/sections/Experience';
-import ExperienceHighlights from './components/sections/ExperienceHighlights';
-import Skills from './components/sections/Skills';
+import Projects from './components/sections/Projects';
 import Certifications from './components/sections/Certifications';
-
+import Skills from './components/sections/Skills';
 import Contact from './components/sections/Contact';
 import Footer from './components/sections/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#0f172a_0%,transparent_55%)]" />
+    <div className="min-h-screen bg-slate-950 text-slate-100">
       <Navbar />
       <Hero />
       <About />
       <Experience />
-      <ExperienceHighlights />
-      <Skills />
+      <Projects />
       <Certifications />
+      <Skills />
       <Contact />
       <Footer />
       <Analytics />
