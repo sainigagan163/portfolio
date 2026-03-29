@@ -1,0 +1,47 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#14b8a6"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Subtle grid pattern -->
+  <g opacity="0.05" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="0" x2="1200" y2="630"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+    <line x1="0" y1="157" x2="1200" y2="157"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="472" x2="1200" y2="472"/>
+  </g>
+  <!-- Accent bar -->
+  <rect x="100" y="200" width="60" height="4" rx="2" fill="url(#accent)"/>
+  <!-- Name -->
+  <text x="100" y="260" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="700" fill="#f1f5f9">Gagan Saini</text>
+  <!-- Title -->
+  <text x="100" y="320" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="500" fill="#14b8a6">Data Scientist &amp; ML Engineer</text>
+  <!-- Tagline -->
+  <text x="100" y="380" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#94a3b8">Building ML pipelines and fraud detection systems</text>
+  <text x="100" y="410" font-family="Inter, system-ui, sans-serif" font-size="20" fill="#94a3b8">across AWS, Azure, and GCP.</text>
+  <!-- Location -->
+  <text x="100" y="470" font-family="Inter, system-ui, sans-serif" font-size="18" fill="#64748b">Aberdeen, UK — gagansaini.dev</text>
+  <!-- Tech tags -->
+  <rect x="100" y="500" width="70" height="28" rx="4" fill="#14b8a610" stroke="#14b8a640" stroke-width="1"/>
+  <text x="135" y="519" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#14b8a6" text-anchor="middle">Python</text>
+  <rect x="180" y="500" width="50" height="28" rx="4" fill="#14b8a610" stroke="#14b8a640" stroke-width="1"/>
+  <text x="205" y="519" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#14b8a6" text-anchor="middle">AWS</text>
+  <rect x="240" y="500" width="58" height="28" rx="4" fill="#14b8a610" stroke="#14b8a640" stroke-width="1"/>
+  <text x="269" y="519" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#14b8a6" text-anchor="middle">Azure</text>
+  <rect x="308" y="500" width="50" height="28" rx="4" fill="#14b8a610" stroke="#14b8a640" stroke-width="1"/>
+  <text x="333" y="519" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#14b8a6" text-anchor="middle">GCP</text>
+  <rect x="368" y="500" width="36" height="28" rx="4" fill="#14b8a610" stroke="#14b8a640" stroke-width="1"/>
+  <text x="386" y="519" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#14b8a6" text-anchor="middle">ML</text>
+</svg>
