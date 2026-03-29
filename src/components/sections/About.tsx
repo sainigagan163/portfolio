@@ -11,7 +11,7 @@ const About: React.FC = () => {
 
         <div className="space-y-4 text-slate-400 leading-relaxed">
           <p>
-            MSc Data Science candidate at the University of Aberdeen (expected June 2026) with
+            MSc Data Science candidate at the University of Aberdeen, UK (expected June 2026) with
             2+ years of professional experience building ML-powered cloud optimisation pipelines
             at CloudEQ Software. I specialise in fraud detection, ETL architecture, and applied
             machine learning across AWS, Azure, and GCP.

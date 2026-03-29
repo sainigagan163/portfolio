@@ -35,41 +35,49 @@ const certifications = [
   },
 ];
 
+const marqueeItems = [...certifications, ...certifications];
+
 const Certifications = () => {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section id="certifications" className="py-24 bg-slate-900/50">
-      <div ref={ref} className={`max-w-3xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <h2 className="text-2xl font-bold mb-8 text-white">Certifications</h2>
+    <section id="certifications" className="py-24 bg-slate-900/50 overflow-hidden">
+      <div ref={ref} className={`mx-auto max-w-6xl px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <h2 className="text-2xl font-bold mb-8 text-white text-center">Certifications</h2>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {certifications.map((cert) => (
-            <a
-              key={cert.title}
-              href={cert.url}
-              target="_blank"
-              rel="noreferrer"
-              className="group flex flex-col items-center rounded-lg border border-slate-800 p-5 text-center transition-all duration-200 hover:border-teal-500/40 hover:bg-teal-500/5"
-            >
-              <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-lg bg-slate-900 mb-3">
-                <img
-                  src={cert.badge}
-                  alt={`${cert.title} badge`}
-                  loading="lazy"
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <span className="text-[0.65rem] font-semibold uppercase tracking-widest text-slate-500 mb-1">
-                {cert.provider}
-              </span>
-              <h3 className="text-sm font-semibold text-white mb-2">{cert.title}</h3>
-              <span className="flex items-center gap-1 text-xs text-teal-400 opacity-0 group-hover:opacity-100 transition-opacity mt-auto">
-                <ExternalLink className="w-3 h-3" />
-                Verify
-              </span>
-            </a>
-          ))}
+        <div className="relative">
+          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-slate-950 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-slate-950 to-transparent z-10 pointer-events-none" />
+
+          <div className="flex animate-marquee hover:[animation-play-state:paused]">
+            {marqueeItems.map((cert, index) => (
+              <a
+                key={`${cert.title}-${index}`}
+                href={cert.url}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex-shrink-0 w-56 mx-3 flex flex-col items-center rounded-lg border border-slate-800 p-5 text-center transition-all duration-200 hover:border-teal-500/40 hover:bg-teal-500/5"
+                aria-label={`Verify ${cert.title} credential`}
+              >
+                <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-lg bg-slate-900 mb-3">
+                  <img
+                    src={cert.badge}
+                    alt={`${cert.title} badge`}
+                    loading="lazy"
+                    className="h-full w-full object-contain transition duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <span className="text-[0.65rem] font-semibold uppercase tracking-widest text-slate-500 mb-1">
+                  {cert.provider}
+                </span>
+                <h3 className="text-sm font-semibold text-white mb-2">{cert.title}</h3>
+                <span className="flex items-center gap-1 text-xs text-teal-400 opacity-0 group-hover:opacity-100 transition-opacity mt-auto">
+                  <ExternalLink className="w-3 h-3" />
+                  Verify
+                </span>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
