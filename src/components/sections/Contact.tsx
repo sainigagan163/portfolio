@@ -7,14 +7,14 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact" className="py-24">
-      <div ref={ref} className={`max-w-3xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div ref={ref} className={`max-w-6xl mx-auto px-6 sm:px-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h2 className="text-2xl font-bold mb-4 text-white">Contact</h2>
         <p className="text-slate-400 mb-8">
           Open to Data Scientist, ML Engineer, and Data Engineer roles in the UK.
           Let's talk.
         </p>
 
-        <div className="grid gap-3 sm:grid-cols-2">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           <a
             href="mailto:sainigagan163@gmail.com"
             className="flex items-center gap-3 rounded-lg border border-slate-800 p-4 text-sm text-slate-400 hover:text-white hover:border-teal-500/40 transition-colors"
@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
             <Linkedin className="w-5 h-5 text-teal-500 shrink-0" />
             linkedin.com/in/gagansaini29
           </a>
-          <div className="flex items-center gap-3 rounded-lg border border-slate-800 p-4 text-sm text-slate-400 sm:col-span-2">
+          <div className="flex items-center gap-3 rounded-lg border border-slate-800 p-4 text-sm text-slate-400 sm:col-span-2 lg:col-span-4">
             <MapPin className="w-5 h-5 text-teal-500 shrink-0" />
             United Kingdom — Open to relocation
           </div>
