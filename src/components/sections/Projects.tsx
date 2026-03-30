@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
 
   return (
     <section id="projects" className="py-24 bg-slate-900/50">
-      <div ref={ref} className={`max-w-3xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div ref={ref} className={`max-w-6xl mx-auto px-6 sm:px-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h2 className="text-2xl font-bold mb-8 text-white">Projects</h2>
 
         <div className="rounded-lg border border-teal-500/30 bg-teal-500/5 p-6">

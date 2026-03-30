@@ -6,10 +6,10 @@ const About: React.FC = () => {
 
   return (
     <section id="about" className="py-24">
-      <div ref={ref} className={`max-w-3xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div ref={ref} className={`max-w-6xl mx-auto px-6 sm:px-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h2 className="text-2xl font-bold mb-6 text-white">About</h2>
 
-        <div className="space-y-4 text-slate-400 leading-relaxed">
+        <div className="space-y-4 text-slate-400 leading-relaxed max-w-3xl">
           <p>
             MSc Data Science candidate at the University of Aberdeen, UK (expected June 2026) with
             2+ years of professional experience building ML-powered cloud optimisation pipelines
