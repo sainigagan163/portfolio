@@ -10,7 +10,7 @@ const tabs = [
   {
     id: 'ml',
     label: 'ML / Data Science',
-    skills: ['Scikit-learn', 'XGBoost', 'Pandas', 'NumPy', 'TensorFlow', 'NLP'],
+    skills: ['Scikit-learn', 'XGBoost', 'TensorFlow', 'Pandas', 'NumPy', 'Matplotlib', 'Statistical Modelling', 'Feature Engineering', 'EDA', 'Predictive Modelling'],
   },
   {
     id: 'cloud',

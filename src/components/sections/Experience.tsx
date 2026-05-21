@@ -12,7 +12,7 @@ const Experience: React.FC = () => {
         <div className="border-l-2 border-teal-500/40 pl-6">
           <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-4">
             <div>
-              <h3 className="text-lg font-semibold text-white">Data Engineer / DevOps Engineer</h3>
+              <h3 className="text-lg font-semibold text-white">Data Engineer I</h3>
               <p className="text-sm text-slate-400">CloudEQ Software India Pvt. Ltd.</p>
             </div>
             <span className="text-xs font-medium text-slate-500 shrink-0">Jul 2022 – Dec 2024</span>
@@ -20,23 +20,23 @@ const Experience: React.FC = () => {
           <ul className="space-y-3 text-sm text-slate-400 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Engineered ML-powered cloud cost optimisation pipelines, <strong className="text-slate-300">reducing infrastructure spend by 35%</strong> across multi-cloud environments (AWS, Azure, GCP)</span>
+              <span>Developed a machine learning-powered resource clustering model in Python using Scikit-learn, TensorFlow, and DBScan to identify utilisation patterns across <strong className="text-slate-300">500+ cloud assets</strong>, contributing to a <strong className="text-slate-300">25% reduction in client cloud expenditure</strong></span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Designed and deployed automated ETL workflows processing <strong className="text-slate-300">50K+ daily records with 99.7% data integrity</strong></span>
+              <span>Built automated ETL pipelines using Python and SQL to collect, clean, and transform high-volume infrastructure telemetry from AWS, Azure, and GCP APIs — <strong className="text-slate-300">reducing manual data preparation overhead by 40%</strong></span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Built CI/CD pipelines using Jenkins, Docker, and Terraform, <strong className="text-slate-300">cutting deployment time by 40%</strong></span>
+              <span>Engineered a Python-based anomaly detection system applying threshold-based statistical rules to live operational metrics, <strong className="text-slate-300">reducing incident response time by 30%</strong> across 500+ monitored assets</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Developed real-time monitoring dashboards integrating CloudWatch, Azure Monitor, and GCP Operations Suite, <strong className="text-slate-300">improving incident response time by 30%</strong></span>
+              <span>Applied unsupervised clustering techniques to multi-source cloud utilisation data to segment resource behaviour, producing structured analytical outputs that <strong className="text-slate-300">informed infrastructure optimisation decisions</strong> across client environments</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Implemented infrastructure-as-code practices across <strong className="text-slate-300">15+ client environments</strong>, reducing provisioning errors by 45%</span>
+              <span>Developed and maintained data pipelines using <strong className="text-slate-300">Microsoft Fabric Data Factory</strong>, automating structured data ingestion workflows and contributing to scalable, reproducible analytical infrastructure</span>
             </li>
           </ul>
         </div>

@@ -10,7 +10,7 @@ const Hero = () => {
       <ParticleBackground />
 
       <div className="relative z-10 flex flex-col items-center text-center space-y-6 max-w-3xl mx-auto px-4">
-        <p className="text-sm font-medium text-teal-400 tracking-wide">United Kingdom — Open to relocation</p>
+        <p className="text-sm font-medium text-teal-400 tracking-wide">Delhi - NCR, India</p>
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
           Gagan Saini
@@ -21,8 +21,8 @@ const Hero = () => {
         </p>
 
         <p className="text-lg text-slate-400 max-w-2xl leading-relaxed">
-          I build fraud detection systems and ML-powered data pipelines across
-          AWS, Azure, and GCP.
+          I build ML systems that reduce cost, automate complexity, and surface
+          actionable insights from large-scale operational data.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 pt-4">

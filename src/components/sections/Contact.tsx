@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
       <div ref={ref} className={`max-w-6xl mx-auto px-6 sm:px-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h2 className="text-2xl font-bold mb-4 text-white">Contact</h2>
         <p className="text-slate-400 mb-8">
-          Open to Data Scientist, ML Engineer, and Data Engineer roles in the UK.
+          Open to Data Scientist, ML Engineer, and Data Engineer roles.
           Let's talk.
         </p>
 
@@ -23,11 +23,11 @@ const Contact: React.FC = () => {
             sainigagan163@gmail.com
           </a>
           <a
-            href="tel:+447823916494"
+            href="tel:+919911774256"
             className="flex items-center gap-3 rounded-lg border border-slate-800 p-4 text-sm text-slate-400 hover:text-white hover:border-teal-500/40 transition-colors"
           >
             <Phone className="w-5 h-5 text-teal-500 shrink-0" />
-            +44 7823916494
+            +91 9911774256
           </a>
           <a
             href="https://github.com/sainigagan163"
@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
           </a>
           <div className="flex items-center gap-3 rounded-lg border border-slate-800 p-4 text-sm text-slate-400 sm:col-span-2 lg:col-span-4">
             <MapPin className="w-5 h-5 text-teal-500 shrink-0" />
-            United Kingdom — Open to relocation
+            Delhi - NCR, India
           </div>
         </div>
       </div>
