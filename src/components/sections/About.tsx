@@ -11,16 +11,15 @@ const About: React.FC = () => {
 
         <div className="space-y-4 text-slate-400 leading-relaxed max-w-3xl">
           <p>
-            MSc Data Science candidate at the University of Aberdeen, UK (expected June 2026) with
-            2+ years of professional experience building ML-powered cloud optimisation pipelines
-            at CloudEQ Software. I specialise in fraud detection, ETL architecture, and applied
-            machine learning across AWS, Azure, and GCP.
+            Data Scientist with a track record of building ML systems that reduce cost, automate
+            complexity, and surface actionable insights from large-scale operational data — including
+            a clustering model cutting client cloud spend by 25% and an anomaly detection system
+            reducing incident response time by 30%.
           </p>
           <p>
-            I made a self-driven career pivot from Civil Engineering into data science — motivated
-            by a genuine interest in using data to solve complex problems at scale. My work
-            focuses on shipping ML systems that deliver measurable business outcomes, not just
-            proof-of-concept notebooks.
+            Currently pursuing MSc in Data Science at the University of Aberdeen (graduating June 2026),
+            with 2.5 years of commercial experience in Python, SQL, and cloud-based data engineering
+            across AWS, Azure, and GCP. Holds five certifications including Azure Data Scientist Associate.
           </p>
         </div>
 
@@ -42,9 +41,9 @@ const About: React.FC = () => {
             <h3 className="text-sm font-semibold uppercase tracking-wide text-teal-400 mb-3">Quick Facts</h3>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>5x AWS / Azure certified</li>
-              <li>2+ years production ML experience</li>
-              <li>35% cloud cost reduction delivered</li>
-              <li>50K+ daily records processed at 99.7% integrity</li>
+              <li>2.5 years commercial experience</li>
+              <li>25% cloud cost reduction delivered</li>
+              <li>500+ cloud assets monitored & optimised</li>
             </ul>
           </div>
         </div>
