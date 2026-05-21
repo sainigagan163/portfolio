@@ -10,12 +10,6 @@ const Hero = () => {
       <ParticleBackground />
 
       <div className="relative z-10 flex flex-col items-center text-center space-y-6 max-w-3xl mx-auto px-4">
-        <img
-          src={`${import.meta.env.BASE_URL}images/Profile.jpg`}
-          alt="Gagan Saini"
-          className="w-32 h-32 rounded-full object-cover border-2 border-teal-500/40 shadow-lg shadow-teal-500/10"
-        />
-
         <p className="text-sm font-medium text-teal-400 tracking-wide">Delhi - NCR, India</p>
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">

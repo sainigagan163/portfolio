@@ -9,18 +9,25 @@ const About: React.FC = () => {
       <div ref={ref} className={`max-w-6xl mx-auto px-6 sm:px-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <h2 className="text-2xl font-bold mb-6 text-white">About</h2>
 
-        <div className="space-y-4 text-slate-400 leading-relaxed max-w-3xl">
-          <p>
-            Data Scientist with a track record of building ML systems that reduce cost, automate
-            complexity, and surface actionable insights from large-scale operational data — including
-            a clustering model cutting client cloud spend by 25% and an anomaly detection system
-            reducing incident response time by 30%.
-          </p>
-          <p>
-            Currently pursuing MSc in Data Science at the University of Aberdeen (graduating June 2026),
-            with 2.5 years of commercial experience in Python, SQL, and cloud-based data engineering
-            across AWS, Azure, and GCP. Holds five certifications including Azure Data Scientist Associate.
-          </p>
+        <div className="flex flex-col md:flex-row gap-8 items-start">
+          <div className="space-y-4 text-slate-400 leading-relaxed flex-1">
+            <p>
+              Data Scientist with a track record of building ML systems that reduce cost, automate
+              complexity, and surface actionable insights from large-scale operational data — including
+              a clustering model cutting client cloud spend by 25% and an anomaly detection system
+              reducing incident response time by 30%.
+            </p>
+            <p>
+              Currently pursuing MSc in Data Science at the University of Aberdeen (graduating June 2026),
+              with 2.5 years of commercial experience in Python, SQL, and cloud-based data engineering
+              across AWS, Azure, and GCP. Holds five certifications including Azure Data Scientist Associate.
+            </p>
+          </div>
+          <img
+            src={`${import.meta.env.BASE_URL}images/Profile.jpg`}
+            alt="Gagan Saini"
+            className="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover border-2 border-slate-800 shadow-lg shadow-teal-500/10 shrink-0 mx-auto md:mx-0"
+          />
         </div>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
