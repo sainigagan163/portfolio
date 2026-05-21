@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
           <div className="flex items-start justify-between gap-4 mb-3">
             <div>
               <span className="text-[0.65rem] font-semibold uppercase tracking-widest text-teal-400 mb-1 block">Featured Project</span>
-              <h3 className="text-lg font-semibold text-white">Synthetic Fraud Detection Dataset Generator</h3>
+              <h3 className="text-lg font-semibold text-white">Bayesian Synthetic Fraud Dataset Generator for Music Streaming</h3>
             </div>
             <a
               href="https://github.com/sainigagan163/synthetic-fraud-detection"
@@ -28,30 +28,30 @@ const Projects: React.FC = () => {
           </div>
 
           <p className="text-sm text-slate-400 leading-relaxed mb-4">
-            A Python-based, configuration-driven system that generates 100K+ row synthetic datasets for music streaming platform fraud detection. Features a VocabularyFactory class using procedural generation (no hardcoded vocabulary), a DatasetConfig dataclass for full configurability, and deterministic output with SEED=42.
+            Built in collaboration with XYNQ for their ORIGIN fraud detection platform. An expert-elicited Bayesian Network with a hand-crafted DAG (10 nodes, 12 edges) generating 200,000 synthetic music upload records — grounded in published fraud cases including a federal prosecution involving $10M in misappropriated royalties.
           </p>
 
           <ul className="space-y-2 text-sm text-slate-400 mb-4">
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>20-column schema across legitimate and fraudulent behaviour</span>
+              <span>Two-phase generation pipeline embedding real-world fraud signals: audio hash reuse (4.6×), IP rotation (40%), and temporal bursting</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Four fraud scenarios: bot-driven stream manipulation, artist impersonation, content duplication, metadata stuffing</span>
+              <span>Validated with Spearman ρ, Cramér's V (Bergsma bias-corrected), and correlation ratio η — mean absolute deviation ≤ 0.01 across all key variables</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Generates 50K legitimate + 50K fraudulent rows as independent datasets</span>
+              <span>Confirmed statistically significant class separation (user agent 0.77, duration 0.45) suitable for downstream fraud classifier training</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Enables ML teams to train and benchmark fraud classifiers without accessing sensitive production data</span>
+              <span>Deterministic, dictionary-free phoneme-based text generation for reproducible artist names and track titles without hardcoded word lists</span>
             </li>
           </ul>
 
           <div className="flex flex-wrap gap-2">
-            {['Python', 'NumPy', 'Pandas'].map((t) => (
+            {['Python', 'Bayesian Networks', 'NumPy', 'Pandas', 'Statistical Validation'].map((t) => (
               <span key={t} className="px-2.5 py-1 text-xs font-medium text-teal-300 bg-teal-500/10 border border-teal-500/20 rounded">
                 {t}
               </span>

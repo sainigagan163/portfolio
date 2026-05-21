@@ -101,9 +101,15 @@
           <h2>Projects</h2>
 
           <article>
-            <h3>Synthetic Fraud Detection Dataset Generator</h3>
-            <p>A Python-based, configuration-driven system that generates 100K+ row synthetic datasets for music streaming platform fraud detection. Features a VocabularyFactory class using procedural generation, DatasetConfig dataclass for full configurability, deterministic output with SEED=42, and a 20-column schema across legitimate and fraudulent behaviour. Models four fraud scenarios: bot-driven stream manipulation, artist impersonation, content duplication, and metadata stuffing. Enables ML teams to train and benchmark fraud classifiers without accessing sensitive production data.</p>
-            <p>Tech: Python, NumPy, Pandas</p>
+            <h3>Bayesian Synthetic Fraud Dataset Generator for Music Streaming</h3>
+            <p>Built in collaboration with XYNQ for their ORIGIN fraud detection platform. An expert-elicited Bayesian Network with a hand-crafted DAG (10 nodes, 12 edges) generating 200,000 synthetic music upload records — grounded in published fraud cases including a federal prosecution involving $10M in misappropriated royalties.</p>
+            <ul>
+              <li>Two-phase generation pipeline embedding real-world fraud signals: audio hash reuse (4.6×), IP rotation (40%), and temporal bursting</li>
+              <li>Validated with Spearman ρ, Cramér's V (Bergsma bias-corrected), and correlation ratio η — mean absolute deviation ≤ 0.01 across all key variables</li>
+              <li>Confirmed statistically significant class separation (user agent 0.77, duration 0.45) suitable for downstream fraud classifier training</li>
+              <li>Deterministic, dictionary-free phoneme-based text generation for reproducible artist names and track titles without hardcoded word lists</li>
+            </ul>
+            <p>Tech: Python, Bayesian Networks, NumPy, Pandas, Statistical Validation</p>
           </article>
 
         </section>
