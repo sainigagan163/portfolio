@@ -20,23 +20,23 @@ const Experience: React.FC = () => {
           <ul className="space-y-3 text-sm text-slate-400 leading-relaxed">
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Developed a machine learning-powered resource clustering model in Python using Scikit-learn, TensorFlow, and DBScan to identify utilisation patterns across <strong className="text-slate-300">500+ cloud assets</strong>, contributing to a <strong className="text-slate-300">25% reduction in client cloud expenditure</strong></span>
+              <span>Designed a machine learning-based resource clustering algorithm in Python utilizing Scikit-learn, TensorFlow, and DBSCAN to detect utilization patterns for <strong className="text-slate-300">500+ cloud resources</strong>, uncovering cost-saving patterns that led to a <strong className="text-slate-300">25% decrease in client cloud spend</strong></span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Built automated ETL pipelines using Python and SQL to collect, clean, and transform high-volume infrastructure telemetry from AWS, Azure, and GCP APIs — <strong className="text-slate-300">reducing manual data preparation overhead by 40%</strong></span>
+              <span>Created automated ETL flows using Python and SQL for the collection, cleaning, and transformation of massive infrastructural telemetry from AWS, Azure, and GCP API endpoints — <strong className="text-slate-300">saving up to 40% time on data preparation</strong> for statistical analysis</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Engineered a Python-based anomaly detection system applying threshold-based statistical rules to live operational metrics, <strong className="text-slate-300">reducing incident response time by 30%</strong> across 500+ monitored assets</span>
+              <span>Created an anomaly detection system using Python applying threshold-based statistical models to live metrics data of <strong className="text-slate-300">500+ monitored infrastructural elements</strong>, detecting performance degradation trends and <strong className="text-slate-300">decreasing incident response time by 30%</strong></span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Applied unsupervised clustering techniques to multi-source cloud utilisation data to segment resource behaviour, producing structured analytical outputs that <strong className="text-slate-300">informed infrastructure optimisation decisions</strong> across client environments</span>
+              <span>Used feature engineering and clustering algorithms in Python for multi-source cloud utilization data to <strong className="text-slate-300">create clusters of similar infrastructures</strong>, providing structured analytics data for further analysis</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Developed and maintained data pipelines using <strong className="text-slate-300">Microsoft Fabric Data Factory</strong>, automating structured data ingestion workflows and contributing to scalable, reproducible analytical infrastructure</span>
+              <span>Implemented scalable data pipelines for ingestion of structured data using <strong className="text-slate-300">Microsoft Fabric Data Factory</strong> technology</span>
             </li>
           </ul>
         </div>

@@ -12,15 +12,15 @@ const About: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="space-y-4 text-slate-400 leading-relaxed flex-1">
             <p>
-              Data Scientist with a track record of building ML systems that reduce cost, automate
-              complexity, and surface actionable insights from large-scale operational data — including
-              a clustering model cutting client cloud spend by 25% and an anomaly detection system
-              reducing incident response time by 30%.
+              Data Scientist with 2.5 years of professional experience creating ML algorithms and
+              statistical models that help lower costs, simplify complexities, and reveal business
+              intelligence from big data — resulting in a savings of 25% on client cloud computing
+              costs, 40% on report creation, and 30% on incident resolution time.
             </p>
             <p>
-              Currently pursuing MSc in Data Science at the University of Aberdeen (graduating June 2026),
-              with 2.5 years of commercial experience in Python, SQL, and cloud-based data engineering
-              across AWS, Azure, and GCP. Holds five certifications including Azure Data Scientist Associate.
+              Presently pursuing MSc in Data Science from University of Aberdeen (June 2026),
+              supported by five credentials, including Microsoft Certified: Azure Data Scientist
+              Associate & Microsoft Certified: Azure AI Engineer Associate.
             </p>
           </div>
           <img
@@ -50,7 +50,8 @@ const About: React.FC = () => {
               <li>5x AWS / Azure certified</li>
               <li>2.5 years commercial experience</li>
               <li>25% cloud cost reduction delivered</li>
-              <li>500+ cloud assets monitored & optimised</li>
+              <li>40% report creation time saved</li>
+              <li>30% incident resolution time reduced</li>
             </ul>
           </div>
         </div>
