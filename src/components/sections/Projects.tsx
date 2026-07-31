@@ -62,6 +62,38 @@ const Projects: React.FC = () => {
             ))}
           </div>
         </div>
+
+        <div className="mt-6 rounded-lg border border-slate-800 bg-slate-900/40 p-6">
+          <div className="flex items-start justify-between gap-4 mb-3">
+            <div>
+              <span className="text-[0.65rem] font-semibold uppercase tracking-widest text-slate-500 mb-1 block">Project</span>
+              <h3 className="text-lg font-semibold text-white">E-sports Match Winner Predictor</h3>
+            </div>
+          </div>
+
+          <p className="text-sm text-slate-400 leading-relaxed mb-4">
+            Built a match outcome prediction model for League of Legends using XGBoost trained on 50,000+ competitive matches, achieving <strong className="text-slate-300">94.6% accuracy</strong> and <strong className="text-slate-300">0.986 ROC-AUC</strong> through feature engineering on 15 minutes of in-game telemetry data per match.
+          </p>
+
+          <ul className="space-y-2 text-sm text-slate-400 mb-4">
+            <li className="flex items-start gap-2">
+              <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
+              <span>Applied feature engineering on early-game telemetry (gold diff, kills, objectives, CS) to capture match-state signals within the first 15 minutes</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
+              <span>Trained XGBoost classifier on 50,000+ matches — optimised via cross-validation, achieving 94.6% accuracy and 0.986 ROC-AUC on held-out test data</span>
+            </li>
+          </ul>
+
+          <div className="flex flex-wrap gap-2">
+            {['Python', 'XGBoost', 'Feature Engineering', 'Pandas', 'Scikit-learn'].map((t) => (
+              <span key={t} className="px-2.5 py-1 text-xs font-medium text-teal-300 bg-teal-500/10 border border-teal-500/20 rounded">
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
