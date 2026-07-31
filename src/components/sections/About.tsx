@@ -12,15 +12,10 @@ const About: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="space-y-4 text-slate-400 leading-relaxed flex-1">
             <p>
-              Data Scientist with 2.5 years of professional experience creating ML algorithms and
-              statistical models that help lower costs, simplify complexities, and reveal business
-              intelligence from big data — resulting in a savings of 25% on client cloud computing
-              costs, 40% on report creation, and 30% on incident resolution time.
+              Data Scientist with 2.5 years of professional experience creating ML algorithms and statistical models that help lower costs, simplify complexities, and reveal business intelligence from big data - resulting in a savings of 25% on client cloud computing costs, 40% on report creation, and 30% on incident resolution time.
             </p>
             <p>
-              Presently pursuing MSc in Data Science from University of Aberdeen (June 2026),
-              supported by five credentials, including Microsoft Certified: Azure Data Scientist
-              Associate & Microsoft Certified: Azure AI Engineer Associate.
+              Graduated with an MSc in Data Science from the University of Aberdeen (June 2026), with Commendation, supported by five credentials, including Microsoft Certified: Azure Data Scientist Associate & Microsoft Certified: Azure AI Engineer Associate.
             </p>
           </div>
           <img
