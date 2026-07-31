@@ -28,17 +28,21 @@ const Projects: React.FC = () => {
           </div>
 
           <p className="text-sm text-slate-400 leading-relaxed mb-4">
-            Built in collaboration with XYNQ for their ORIGIN fraud detection platform. An expert-elicited Bayesian Network with a hand-crafted DAG (10 nodes, 12 edges) generating 200,000 synthetic music upload records — grounded in published fraud cases including a federal prosecution involving $10M in misappropriated royalties.
+            Built in collaboration with XYNQ for their ORIGIN fraud detection platform. An expert-elicited Bayesian Network with a hand-crafted DAG (10 nodes, 12 edges) generating 200,000 synthetic music upload records across a 20-column schema - grounded in published fraud cases including a federal prosecution involving $10M in misappropriated royalties.
           </p>
 
           <ul className="space-y-2 text-sm text-slate-400 mb-4">
+            <li className="flex items-start gap-2">
+              <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
+              <span>Modeled four real-world fraud scenarios - bot-driven stream manipulation, artist impersonation, content duplication, and metadata stuffing - via a scalable, config-driven architecture (<code className="text-teal-300">DatasetConfig</code> dataclass)</span>
+            </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
               <span>Two-phase generation pipeline embedding real-world fraud signals: audio hash reuse (4.6×), IP rotation (40%), and temporal bursting</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Validated with Spearman ρ, Cramér's V (Bergsma bias-corrected), and correlation ratio η — mean absolute deviation ≤ 0.01 across all key variables</span>
+              <span>Validated with Spearman ρ, Cramér's V (Bergsma bias-corrected), and correlation ratio η - mean absolute deviation ≤ 0.01 across all key variables</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
@@ -46,7 +50,7 @@ const Projects: React.FC = () => {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Deterministic, dictionary-free phoneme-based text generation for reproducible artist names and track titles without hardcoded word lists</span>
+              <span>Deterministic, dictionary-free phoneme-based text generation (<code className="text-teal-300">VocabularyFactory</code>) for reproducible artist names and track titles without hardcoded word lists</span>
             </li>
           </ul>
 
