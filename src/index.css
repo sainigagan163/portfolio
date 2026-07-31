@@ -56,3 +56,34 @@ html {
   animation: tag-in 0.35s ease-out both;
 }
 
+/* ── Premium global styles ─────────────────────── */
+
+/* Custom teal scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #020617; }
+::-webkit-scrollbar-thumb { background: rgba(45,212,191,0.25); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(45,212,191,0.55); }
+
+/* Teal text selection */
+::selection { background: rgba(45,212,191,0.2); color: #f0fdfa; }
+
+/* Gradient text — used on Hero name */
+.gradient-text {
+  background: linear-gradient(135deg, #ffffff 40%, #2dd4bf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated rainbow border — used on featured project card */
+@keyframes border-spin {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient-border {
+  background: linear-gradient(90deg, #2dd4bf, #818cf8, #f472b6, #2dd4bf);
+  background-size: 300% 100%;
+  animation: border-spin 4s linear infinite;
+}

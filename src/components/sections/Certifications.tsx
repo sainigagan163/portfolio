@@ -1,6 +1,7 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
+import SectionHeading from '../SectionHeading';
 
 const certifications = [
   {
@@ -43,7 +44,7 @@ const Certifications = () => {
   return (
     <section id="certifications" className="py-24 bg-slate-900/50 overflow-hidden">
       <div ref={ref} className={`mx-auto max-w-6xl px-6 sm:px-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <h2 className="text-2xl font-bold mb-8 text-white text-center">Certifications</h2>
+        <SectionHeading num="04" title="Certifications" />
 
         <div className="relative">
           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[#0b1121] to-transparent z-10 pointer-events-none" />

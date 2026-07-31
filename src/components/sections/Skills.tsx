@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Code2, BrainCircuit, Cloud, Database, GitBranch, Wrench, Layers } from 'lucide-react';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
+import SectionHeading from '../SectionHeading';
 
 const skillGroups = [
   {
@@ -167,8 +168,8 @@ const Skills = () => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
-        <h2 className="text-2xl font-bold mb-1 text-white">Skills & Technologies</h2>
-        <p className="text-slate-500 text-sm mb-10">Hover a card to explore</p>
+        <SectionHeading num="05" title="Skills &amp; Technologies" />
+        <p className="text-slate-500 text-sm mb-10 -mt-6">Hover a card to explore</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {skillGroups.map((group, i) => (
