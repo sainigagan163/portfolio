@@ -36,11 +36,11 @@ const About: React.FC = () => {
             <div className="space-y-3">
               <div>
                 <p className="font-medium text-white text-sm">MSc Data Science</p>
-                <p className="text-sm text-slate-500">University of Aberdeen, UK — Expected June 2026</p>
+                <p className="text-sm text-slate-500">University of Aberdeen, UK - Expected 2025-2026</p>
               </div>
               <div>
                 <p className="font-medium text-white text-sm">B.Tech Civil Engineering</p>
-                <p className="text-sm text-slate-500">AKGEC, AKTU, India — 2017–2021</p>
+                <p className="text-sm text-slate-500">AKGEC, AKTU, India - 2017–2021</p>
               </div>
             </div>
           </div>
