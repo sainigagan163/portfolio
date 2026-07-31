@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-slate-800 py-8">
       <div className="max-w-3xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-slate-500">&copy; 2025 Gagan Saini</p>
+        <p className="text-sm text-slate-500">&copy; 2026 Gagan Saini</p>
         <div className="flex items-center gap-6 text-sm text-slate-500">
           <a href="https://github.com/sainigagan163" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a>
           <a href="https://linkedin.com/in/gagansaini29" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>

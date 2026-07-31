@@ -15,7 +15,7 @@ const About: React.FC = () => {
               Data Scientist with 2.5 years of professional experience creating ML algorithms and statistical models that help lower costs, simplify complexities, and reveal business intelligence from big data - resulting in a savings of 25% on client cloud computing costs, 40% on report creation, and 30% on incident resolution time.
             </p>
             <p>
-              Graduated with an MSc in Data Science from the University of Aberdeen (June 2026), with Commendation, supported by five credentials, including Microsoft Certified: Azure Data Scientist Associate & Microsoft Certified: Azure AI Engineer Associate.
+              Graduated with an MSc in Data Science from the University of Aberdeen (2026), with Commendation, supported by five credentials, including Microsoft Certified: Azure Data Scientist Associate & Microsoft Certified: Azure AI Engineer Associate.
             </p>
           </div>
           <img
@@ -31,7 +31,7 @@ const About: React.FC = () => {
             <div className="space-y-3">
               <div>
                 <p className="font-medium text-white text-sm">MSc Data Science</p>
-                <p className="text-sm text-slate-500">University of Aberdeen, UK - Expected 2025-2026</p>
+                <p className="text-sm text-slate-500">University of Aberdeen, UK - 2025-2026</p>
               </div>
               <div>
                 <p className="font-medium text-white text-sm">B.Tech Civil Engineering</p>

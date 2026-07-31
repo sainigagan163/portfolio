@@ -24,7 +24,7 @@ const Experience: React.FC = () => {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
-              <span>Created automated ETL flows using Python and SQL for the collection, cleaning, and transformation of massive infrastructural telemetry from AWS, Azure, and GCP API endpoints — <strong className="text-slate-300">saving up to 40% time on data preparation</strong> for statistical analysis</span>
+              <span>Created automated ETL flows using Python and SQL for the collection, cleaning, and transformation of massive infrastructural telemetry from AWS, Azure, and GCP API endpoints - <strong className="text-slate-300">saving up to 40% time on data preparation</strong> for statistical analysis</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-2 h-1 w-1 rounded-full bg-teal-500 shrink-0" />
