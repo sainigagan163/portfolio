@@ -17,12 +17,12 @@ const CountUpStat: React.FC<{ end: number; suffix: string; label: string; decima
   const value = useCountUp(end, trigger, 2000, decimals);
   return (
     <div className="text-center">
-      <p className="text-2xl font-bold text-white">
+      <p className="text-3xl font-bold text-white">
         <span className="bg-gradient-to-r from-white to-teal-400 bg-clip-text text-transparent">
           {value}{suffix}
         </span>
       </p>
-      <p className="text-xs text-slate-500 mt-1">{label}</p>
+      <p className="text-sm text-slate-500 mt-1.5">{label}</p>
     </div>
   );
 };
@@ -70,7 +70,7 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 items-start">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {/* Education card */}
           <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-6 hover:border-teal-500/30 transition-all duration-300">
             <h3 className="text-xs font-mono font-bold uppercase tracking-widest text-teal-400 mb-5">
@@ -80,16 +80,16 @@ const About: React.FC = () => {
               <div className="flex items-start gap-3">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-400" />
                 <div>
-                  <p className="font-semibold text-white text-sm">MSc Data Science</p>
-                  <p className="text-xs text-slate-500 mt-0.5">University of Aberdeen, UK · 2025–2026</p>
-                  <p className="text-xs text-teal-400/70 mt-0.5 italic">with Commendation</p>
+                  <p className="font-semibold text-white text-lg">MSc Data Science</p>
+                  <p className="text-sm text-slate-500 mt-0.5">University of Aberdeen, UK · 2025–2026</p>
+                  <p className="text-sm text-teal-400/70 mt-0.5 italic">with Commendation</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-600" />
                 <div>
-                  <p className="font-semibold text-white text-sm">B.Tech Civil Engineering</p>
-                  <p className="text-xs text-slate-500 mt-0.5">AKGEC, AKTU, India · 2017–2021</p>
+                  <p className="font-semibold text-white text-lg">B.Tech Civil Engineering</p>
+                  <p className="text-sm text-slate-500 mt-0.5">AKGEC, AKTU, India · 2017–2021</p>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ const About: React.FC = () => {
             <h3 className="text-xs font-mono font-bold uppercase tracking-widest text-teal-400 mb-5">
               Impact at a Glance
             </h3>
-            <div className="grid grid-cols-2 gap-x-6 gap-y-5">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-6">
               {impactStats.map((stat) => (
                 <CountUpStat
                   key={stat.label}
