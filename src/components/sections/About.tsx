@@ -1,17 +1,34 @@
 import React from 'react';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
+import { useCountUp } from '../../hooks/useCountUp';
 import SectionHeading from '../SectionHeading';
+
+const impactStats = [
+  { end: 5, suffix: '×', label: 'AWS / Azure certified', decimals: 0 },
+  { end: 2.5, suffix: ' yrs', label: 'Commercial experience', decimals: 1 },
+  { end: 25, suffix: '%', label: 'Cloud cost reduction', decimals: 0 },
+  { end: 40, suffix: '%', label: 'Report time saved', decimals: 0 },
+  { end: 30, suffix: '%', label: 'Incident resolution faster', decimals: 0 },
+];
+
+const CountUpStat: React.FC<{ end: number; suffix: string; label: string; decimals: number; trigger: boolean }> = ({
+  end, suffix, label, decimals, trigger,
+}) => {
+  const value = useCountUp(end, trigger, 2000, decimals);
+  return (
+    <div className="text-center">
+      <p className="text-2xl font-bold text-white">
+        <span className="bg-gradient-to-r from-white to-teal-400 bg-clip-text text-transparent">
+          {value}{suffix}
+        </span>
+      </p>
+      <p className="text-xs text-slate-500 mt-1">{label}</p>
+    </div>
+  );
+};
 
 const About: React.FC = () => {
   const { ref, isVisible } = useScrollReveal();
-
-  const impactFacts = [
-    '5× AWS / Azure certified',
-    '2.5 years commercial experience',
-    '25% cloud cost reduction delivered',
-    '40% manual reporting time saved',
-    '30% incident resolution time reduced',
-  ];
 
   return (
     <section id="about" className="py-24">
@@ -78,19 +95,23 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Impact card */}
+          {/* Impact card — animated counters */}
           <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-6 hover:border-teal-500/30 transition-all duration-300">
             <h3 className="text-xs font-mono font-bold uppercase tracking-widest text-teal-400 mb-5">
-              Impact
+              Impact at a Glance
             </h3>
-            <ul className="space-y-2.5">
-              {impactFacts.map((fact) => (
-                <li key={fact} className="flex items-center gap-3 text-sm text-slate-400">
-                  <span className="h-px w-4 shrink-0 bg-teal-500/50" />
-                  {fact}
-                </li>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-5">
+              {impactStats.map((stat) => (
+                <CountUpStat
+                  key={stat.label}
+                  end={stat.end}
+                  suffix={stat.suffix}
+                  label={stat.label}
+                  decimals={stat.decimals}
+                  trigger={isVisible}
+                />
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>
