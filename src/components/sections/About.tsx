@@ -70,7 +70,7 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 items-start">
           {/* Education card */}
           <div className="rounded-xl border border-slate-800 bg-slate-900/50 p-6 hover:border-teal-500/30 transition-all duration-300">
             <h3 className="text-xs font-mono font-bold uppercase tracking-widest text-teal-400 mb-5">
